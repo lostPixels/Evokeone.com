@@ -1,0 +1,23 @@
+{
+  "name": "Evokeone.com",
+  "version": "1.0.0",
+  "description": "Evokeone.com memorial website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lostPixels/Evokeone.com.git"
+  },
+  "author": "James Merrill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lostPixels/Evokeone.com/issues"
+  },
+  "homepage": "https://github.com/lostPixels/Evokeone.com",
+  "dependencies": {
+    "express": "^4.12.4",
+    "express-handlebars": "^2.0.1"
+  }
+}

@@ -1,0 +1,165 @@
+/* Global Styles */
+
+html,body{
+    font-family: 'Lora', serif;
+    background: #141414 url(../img/background-pattern.gif);
+    height: 100%;
+}
+
+.page-wrap{
+    min-height: 100%;
+    margin-bottom: -90px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+footer, .page-wrap:after {
+  height: 90px;
+}
+
+header{
+    text-align: center;
+    padding-top: 25px;
+}
+
+header .logo{
+    display: block;
+    margin-bottom: 20px;
+}
+header .logo svg{
+    width: 105px;
+    height: 50px;
+    fill:#ddd;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .logo-tagline{
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+header nav{
+    display: block;
+    border-top:1px solid #232323;
+    border-bottom:1px solid #232323;
+}
+header nav a{
+   display: inline-block;
+   color: #ddd;
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: 14px;
+   padding:14px 5px;
+   margin: 0 8px;
+}
+
+footer{
+    background: #111111;
+    text-align: center;
+}
+
+footer .disclaimer{
+    color: #ddd;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+footer .logo svg{
+    width: 50px;
+    height: 40px;
+    fill:#ddd;
+}
+
+.section-wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 36px;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
+
+
+
+
+
+
+/** Home */
+
+.home .introduction{
+    position: relative;
+    background:url(../img/homepage-hero-bg-1.jpg) center;
+    background-size: cover;
+    height: 400px;
+    box-shadow: inset 0px 0px 150px rgba(12,12,12,1);
+    border: 1px solid #232323
+}
+.home .introduction:after{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(12,12,12,.8);
+}
+.home .introduction figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.home .introduction .intro-text-wrap{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.home .introduction .intro-text{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 50px;
+    color: #ddd;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.4em;
+}
+
+.home .introduction img{
+    width: 100%;
+}
+
+.home .buckets{
+
+}
+
+.home .bucket{
+    box-sizing:border-box;
+    width: 33%;
+    float: left;
+    margin: 0;
+}
