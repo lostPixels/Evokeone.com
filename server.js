@@ -1,5 +1,6 @@
-var express = require('express');
-var exphbs  = require('express-handlebars');
+var express = require('express'),
+    exphbs  = require('express-handlebars'),
+    bodyParser = require('body-parser');
 
 var app = express();
 
@@ -14,6 +15,10 @@ app.get('/', function (req, res) {
 
 app.get('/exhibits', function (req, res) {
     res.render('exhibits-list',{wrapperClass:'exhibits'});
+});
+
+app.get('/exhibit/:exhibitID', function (req, res) {
+    res.render('exhibit',{wrapperClass:'exhibit',exhibitID:req.params.exhibitID});
 });
 
 
