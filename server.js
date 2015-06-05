@@ -9,7 +9,12 @@ app.set('view engine', 'handlebars');
 app.use('/public',express.static('assets'));
 
 app.get('/', function (req, res) {
-    res.render('home');
+    res.render('home',{wrapperClass:'home'});
 });
+
+app.get('/exhibits', function (req, res) {
+    res.render('exhibits-list',{wrapperClass:'exhibits'});
+});
+
 
 app.listen(3000);

@@ -1,0 +1,46 @@
+.exhibits h1{
+    text-align:center;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.4em;
+    margin: 0 0 50px 0;
+    padding: 0 12.5%;
+}
+
+.exhibits .exhibit-list{
+    text-align: center;
+}
+.exhibits article{
+    margin-bottom: 23px;
+}
+.exhibits article h1{
+    display: inline-block;
+    padding: 0 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 0;
+
+    box-sizing:border-box;
+    transform:translateY(-27px);
+    transition:all .4s;
+
+    font-family: 'Montserrat', sans-serif;
+    background: #0e0e0e;
+    border: 1px solid #000;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ddd;
+}
+.exhibits article h1 em{
+    color: #00cc99;
+    font-style: normal;
+    font-size: 10px;
+    margin: 0 10px;
+}
+
+.exhibits .exhibit-list a:hover h1{
+    background: #ddd;
+    color: #0e0e0e;
+    border: 1px solid #fff;
+}
