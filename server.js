@@ -20,6 +20,9 @@ app.get('/exhibits', function (req, res) {
 app.get('/exhibit/:exhibitID', function (req, res) {
     res.render('exhibit',{wrapperClass:'exhibit',exhibitID:req.params.exhibitID});
 });
+app.get('/history', function (req, res) {
+    res.render('history',{wrapperClass:'history'});
+});
 
 
 app.listen(3000);
