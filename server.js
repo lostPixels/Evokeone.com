@@ -16,5 +16,9 @@ app.get('/exhibits', function (req, res) {
     res.render('exhibits-list',{wrapperClass:'exhibits'});
 });
 
+app.get('/history', function (req, res) {
+    res.render('history',{wrapperClass:'history'});
+});
+
 
 app.listen(3000);
