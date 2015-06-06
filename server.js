@@ -23,6 +23,8 @@ app.get('/exhibit/:exhibitID', function (req, res) {
 app.get('/history', function (req, res) {
     res.render('history',{wrapperClass:'history'});
 });
-
+app.get('/submission/:submissionID', function (req, res) {
+    res.render('single-art',{wrapperClass:'single-art'});
+});
 
 app.listen(3000);
