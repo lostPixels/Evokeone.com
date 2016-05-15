@@ -1,0 +1,60 @@
+.exhibit{
+    .hero-info{
+        line-height: 1em;
+        .tertiary-info{
+            font-size: 12px;
+        }
+        .date{
+            &:after{
+                content: ' // ';
+                color: $global-green;
+            }
+        }
+    }
+
+    .artwork-list{
+        display: flex;
+        flex-wrap: wrap;
+
+        .artwork-thumbnail{
+            flex-basis: 25%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 0 0 25px 0;
+            &:hover{
+                figcaption{
+                    opacity: 1;
+                }
+            }
+            a{
+                @include headline-font;
+                color: $global-lt-grey;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                font-size: 11px;
+                text-decoration: none;
+            }
+
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+            figcaption {
+                box-sizing: border-box;
+                padding: 10px;
+                background: $global-dk-grey;
+                text-align: center;
+                max-width: 90%;
+                transform: translateY(-50%);
+                transition: opacity .25s;
+                opacity: 0;
+            }
+        }
+    }
+
+
+}

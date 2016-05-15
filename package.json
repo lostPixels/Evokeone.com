@@ -4,7 +4,9 @@
   "description": "Evokeone.com memorial website",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "gulp": "gulp",
+    "build": "gulp sass"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,13 @@
     "body-parser": "^1.12.4",
     "express": "^4.12.4",
     "express-handlebars": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.1",
+    "lodash": "^4.12.0",
     "mongoose": "^4.2.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.8"
   }
 }

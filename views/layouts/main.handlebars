@@ -7,17 +7,11 @@
 
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="/public/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/home.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/exhibits.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/history.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/single-art.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/archive.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/dist/main.css">
 </head>
 <body>
 
-    <div class="page-wrap {{wrapperClass}}">
+    <div class="page-wrap">
         <header>
             <a class="logo" href="/">
                 <svg version="1.1"xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"x="0px"y="0px"width="820px"height="414px"viewBox="0 0 820 414"enable-background="new 0 0 820 414"xml:space="preserve">
@@ -37,14 +31,14 @@
 
             <nav role="navigation">
                 <a href="/archive" title="Archive">Archive</a>
-                <a href="/exhibits" title="Archive">Exhibits</a>
-                <a href="/history" title="Archive">History</a>
+                <a class="highlighted" href="/exhibits/forever" title="forever exhibit">Forever Exhibit</a>
+                <a href="/history" title="History of Evokeone">History</a>
                 <!-- <a href="/members" title="Archive">Members</a> -->
-                <a href="/memories" title="Memories">Memories</a>
+                <a href="/memories" title="Shared Memories">Memories</a>
             </nav>
         </header>
 
-        <div class="section-wrap">
+        <div class="section-wrap {{wrapperClass}}">
             {{{body}}}
         </div>
     </div>

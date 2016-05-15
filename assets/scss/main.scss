@@ -1,0 +1,17 @@
+$global-green: #00cc99;
+$global-pink: red;
+$global-dk-grey: #0e0e0e;
+$global-lt-grey: #ddd;
+
+@mixin headline-font{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import 'partials/normalize';
+@import 'partials/global-theme';
+@import 'partials/pages/archive';
+@import 'partials/pages/exhibits';
+@import 'partials/pages/history';
+@import 'partials/pages/home';
+@import 'partials/pages/single-art';
+@import 'partials/pages/exhibit';

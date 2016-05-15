@@ -1,1 +1,32 @@
-{{exhibitID}}
+<div class="hero-wrap">
+    <img src="http://placehold.it/1000x200">
+    <div class="hero-info">
+        <h1>{{data.number}} {{data.title}}</h1>
+        <div class="tertiary-info">
+            <span class="date">{{data.releaseDate}}</span>
+            <span class="submission-count">{{data.artwork.length}} submissions<span>
+        </div>
+    </div>
+</div>
+
+<div class="artwork-list">
+
+    {{#each data.artwork}}
+
+        <figure class="artwork-thumbnail">
+            <a href="/submission/{{this.id}}" title="{{this.title}} by {{this.artist}}">
+                <img src="http://placehold.it/250x250" />
+                <figcaption>
+                    <span>{{this.title}}</span>
+                    <span>{{this.artist}}</span>
+                </figcaption>
+            </a>
+        </figure>
+
+
+    {{/each}}
+
+
+
+
+</div>

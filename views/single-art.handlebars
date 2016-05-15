@@ -1,10 +1,13 @@
-
-<figure class="clearfix">
-	<img src="/public/img/history-hero.jpg">
+<figure class="art-wrapper">
+	<img class="art-img" src="http://placehold.it/1500x750">
 	<figcaption>
-		<h1 class="piece">The Blueprint</h1>
-		<h2 class="artist-title">James Merrill</h2>
-		<h3 class="exhibit">Exhibition XXVIII:<span class="exhibition-name">Reconstruction</span></h3>
+		<h1 class="piece">{{data.title}}</h1>
+		<div class="artist-title">
+			<h2>{{data.artist}}</h2>
+			{{#if data.artistURL}}
+				<a class="artist-portfolio" href="{{data.artistURL}}">( {{data.artistURL}} )</a>
+			{{/if}}
+		</div>
+		<a href="/exhibits/{{data.exhibit.id}}" class="exhibit">Exhibition {{data.exhibit.number}}:<span class="exhibition-name">{{data.exhibit.title}}</span></a>
 	</figcaption>
 </figure>
-

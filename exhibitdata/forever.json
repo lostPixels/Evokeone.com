@@ -1,0 +1,60 @@
+{
+    "id": "forever",
+    "title": "FOREVER",
+    "number": "XXXII",
+    "releaseDate": "November 21, 2016",
+    "description": "",
+    "image": "",
+    "og": {
+        "title": "",
+        "image": "",
+        "description": ""
+    },
+    "artwork": [
+
+        {
+            "id": "street-series-trainyard-jm",
+            "title": "Street Series: Trainyard",
+            "artist": "James Merrill",
+            "artistURL": "http://www.tothepixel.com",
+            "imageID": "street-series-trainyard-jm"
+        },
+        {
+            "id": "street-series-trainyard-jm",
+            "title": "Street Series: Trainyard",
+            "artist": "James Merrill",
+            "artistURL": "http://www.tothepixel.com",
+            "imageID": "street-series-trainyard-jm"
+        },
+        {
+            "id": "street-series-trainyard-jm",
+            "title": "Street Series: Trainyard",
+            "artist": "James Merrill",
+            "artistURL": "http://www.tothepixel.com",
+            "imageID": "street-series-trainyard-jm"
+        },
+
+        {
+            "id": "street-series-trainyard-jm",
+            "title": "Street Series: Trainyard",
+            "artist": "James Merrill",
+            "artistURL": "http://www.tothepixel.com",
+            "imageID": "street-series-trainyard-jm"
+        },
+        {
+            "id": "street-series-trainyard-jm",
+            "title": "Street Series: Trainyard",
+            "artist": "James Merrill",
+            "artistURL": "http://www.tothepixel.com",
+            "imageID": "street-series-trainyard-jm"
+        },
+        {
+            "id": "street-series-trainyard-jm",
+            "title": "Street Series: Trainyard",
+            "artist": "James Merrill",
+            "artistURL": "http://www.tothepixel.com",
+            "imageID": "street-series-trainyard-jm"
+        }
+    ]
+
+}
