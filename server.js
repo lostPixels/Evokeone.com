@@ -13,5 +13,4 @@ app.set('view engine', 'handlebars');
 app.use(routes);
 app.use('/public', express.static('assets'));
 
-
-app.listen(80);
+app.listen(3000);
