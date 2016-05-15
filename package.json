@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "Evokeone.com memorial website",
   "main": "server.js",
-  "scripts": {
-    "start": "gulp",
-    "gulp": "gulp",
-    "build": "gulp sass"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/lostPixels/Evokeone.com.git"
