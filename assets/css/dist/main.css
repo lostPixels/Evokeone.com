@@ -357,7 +357,7 @@ th {
 body,
 html {
   font-family: 'Lora', serif;
-  background: #141414 url("../img/background-pattern.gif");
+  background: #141414 url("../../img/background-pattern.gif");
   height: 100%;
   color: #ddd; }
 
@@ -560,7 +560,7 @@ footer .logo svg {
 
 .home .introduction {
   position: relative;
-  background: url("../img/homepage-hero-bg-1.jpg") center;
+  background: url("../../img/homepage-hero-bg-1.jpg") center;
   background-size: cover;
   height: 400px;
   box-shadow: inset 0 0 150px #0c0c0c;
@@ -608,6 +608,14 @@ footer .logo svg {
 
 .home .introduction img {
   width: 100%; }
+
+.home .sub-intro {
+  text-align: center;
+  font-size: 18px;
+  padding: 0 50px;
+  margin-bottom: 50px; }
+  .home .sub-intro em {
+    color: #00cc99; }
 
 .home .buckets {
   display: -webkit-flex;

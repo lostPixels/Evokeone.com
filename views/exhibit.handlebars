@@ -12,10 +12,9 @@
 <div class="artwork-list">
 
     {{#each data.artwork}}
-
         <figure class="artwork-thumbnail">
-            <a href="/submission/{{this.id}}" title="{{this.title}} by {{this.artist}}">
-                <img src="http://placehold.it/250x250" />
+            <a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}} by {{this.artist}}">
+                <img src="/public/art/thumb/{{this.imageID}}.jpg" />
                 <figcaption>
                     <span>{{this.title}}</span>
                     <span>{{this.artist}}</span>

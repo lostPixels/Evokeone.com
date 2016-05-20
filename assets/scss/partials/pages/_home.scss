@@ -1,7 +1,7 @@
 .home {
     .introduction {
         position: relative;
-        background: url("../img/homepage-hero-bg-1.jpg") center;
+        background: url("../../img/homepage-hero-bg-1.jpg") center;
         background-size: cover;
         height: 400px;
         box-shadow: inset 0 0 150px rgba(12,12,12,1);
@@ -50,6 +50,17 @@
     .introduction img {
         width: 100%;
     }
+
+    .sub-intro{
+        text-align: center;
+        font-size: 18px;
+        padding: 0 50px;
+        margin-bottom: 50px;
+        em{
+            color: $global-green;
+        }
+    }
+
     .buckets {
         display: flex;
     }
