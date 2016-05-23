@@ -27,11 +27,19 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
+/*
+    TODO: SUPPORT PNG?
+*/
 gulp.task('resize', function() {
-    return gulp.src('assets/art/full/*.jpg')
+    return gulp.src('assets/art/full/*.{jpg,png}')
         .pipe(plumber())
         .pipe(imageResize({
-            width: 250
+            width: 250,
+            height: 250,
+            crop: true,
+            filter: "Catrom",
+            format: "jpg",
+            quality: 0.9
         }))
         .pipe(gulp.dest('assets/art/thumb'));
 });

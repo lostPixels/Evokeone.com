@@ -4,22 +4,24 @@
         <h1>{{data.number}} {{data.title}}</h1>
         <div class="tertiary-info">
             <span class="date">{{data.releaseDate}}</span>
-            <span class="submission-count">{{data.artwork.length}} submissions<span>
+            <span class="submission-count">{{data.art.length}} submissions<span>
         </div>
     </div>
 </div>
 
 <div class="artwork-list">
-
-    {{#each data.artwork}}
+<!--TODO: do this for each type of art -->
+<!--TODO: make hasXXX for each category to determine whether to output -->
+<!--TODO: and make category labels (i.e. nice big text) -->
+<!--TODO: CATEGORIES: featured, art, photography, audio, collaborations -->
+    {{#each data.art}}
         <figure class="artwork-thumbnail">
             <a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}} by {{this.artist}}">
-                <img src="/public/art/thumb/{{this.imageID}}.jpg" />
+                <img src="/public/art/thumb/{{this.imageID}}.jpg" /></a>
                 <figcaption>
-                    <span>{{this.title}}</span>
-                    <span>{{this.artist}}</span>
+                    <span><a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}} by {{this.artist}}">{{this.title}}</a></span>
+                    <span>{{{this.artistlinks}}}</span>
                 </figcaption>
-            </a>
         </figure>
 
 

@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.12.8",
+    "gulp-image-resize": "^0.8.0",
     "gulp-plumber": "^1.1.0"
   }
 }
