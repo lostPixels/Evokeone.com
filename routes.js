@@ -10,6 +10,8 @@ router.param('exhibitID', function(req, res, next, id) {
   };
   next();
 });
+
+
 router.param('submissionID', function(req, res, next, id) {
   req.submission = {
     id: id

@@ -20,7 +20,7 @@
             flex-basis: 25%;
             box-sizing: border-box;
             padding: 10px;
-            margin: 0 0 25px 0;
+            margin: 0;
             &:hover{
                 figcaption{
                     opacity: 1;
@@ -49,9 +49,20 @@
                 background: $global-dk-grey;
                 text-align: center;
                 max-width: 90%;
+                margin: 0 auto;
                 transform: translateY(-50%);
                 transition: opacity .25s;
                 opacity: 0;
+            }
+
+            .artist-title{
+                &:after{
+                    content: '&';
+                    color: $global-green;
+                }
+                &:last-child:after{
+                    display: none;
+                }
             }
         }
     }

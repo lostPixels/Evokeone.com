@@ -2,11 +2,14 @@
 	<img class="art-img" src="/public/art/full/{{data.imageID}}.jpg">
 	<figcaption>
 		<h1 class="piece">{{data.title}}</h1>
-		<div class="artist-title">
-			<h2>{{data.artist}}</h2>
-			{{#if data.artistURL}}
-				<a class="artist-portfolio" href="{{data.artistURL}}">( {{data.artistURL}} )</a>
-			{{/if}}
+		<div class="artist-wrap">
+			<span class="artist-name">
+				{{#each data.artists}}
+					<h2 class="artist-title">
+						{{this.name}}  <a class="artist-portfolio" href="{{this.url}}">( {{this.url}} )</a>
+					</h2>
+				{{/each}}
+			</span>
 		</div>
 		<a href="/exhibits/{{data.exhibit.id}}" class="exhibit">Exhibition {{data.exhibit.number}}:<span class="exhibition-name">{{data.exhibit.title}}</span></a>
 	</figcaption>

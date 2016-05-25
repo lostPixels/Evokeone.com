@@ -10,175 +10,50 @@
         "image": "",
         "description": ""
     },
-    "numaudio": "0",
-    "numphoto": "0",
-    "numart": "18",
     "art": [
         {
-            "id": "always_by_ben_white",
+            "id": "always_by_ben_white1",
             "title": "ALWAYS",
-            "artist": "Ben White (arklo)",
-            "artistlinks": "<a href=\"http:\/\/nvlnvl.co\" target=\"_blank\">Ben White<\/a>",
-            "imageID": "always_by_ben_white",
-            "filename": "always_by_ben_white.jpg",
-            "extension": ".jpg"
+            "artists": [
+                {
+                    "name": "Person 1",
+                    "url": "http://www.google.com"
+                },
+                {
+                    "name": "Person 2",
+                    "url": "http://www.google.com"
+                }
+            ],
+            "type": "image",
+            "featured": true,
+            "imageID": "always_by_ben_white"
         },
         {
-            "id": "eternal_by_ben_white",
-            "title": "ETERNAL",
-            "artist": "Ben White (arklo)",
-            "artistlinks": "<a href=\"http:\/\/nvlnvl.co\" target=\"_blank\">Ben White<\/a>",
-            "imageID": "eternal_by_ben_white",
-            "filename": "eternal_by_ben_white.jpg",
-            "extension": ".jpg"
+            "id": "always_by_ben_white2",
+            "title": "ALWAYS",
+            "artists": [
+                {
+                    "name": "Test 123",
+                    "url": "http://www.google.com"
+                }
+            ],
+            "type": "image",
+            "featured": true,
+            "imageID": "always_by_ben_white"
         },
         {
-            "id": "everlast_by_the_fleeting_by_hiroshi",
-            "title": "Everlast by the Fleeting",
-            "artist": "Hiroshi (Dragoon)",
-            "artistlinks": "<a href=\"#\" target=\"_blank\">Hiroshi<\/a>",
-            "imageID": "everlast_by_the_fleeting_by_hiroshi",
-            "filename": "everlast_by_the_fleeting_by_hiroshi.jpg",
-            "extension": ".jpg"
-        },
-        {
-            "id": "evk_by_alejandro_soto_martinessi",
-            "title": "EVK",
-            "artist": "Alejandro soto martinessi (Jin)",
-            "artistlinks": "<a href=\"http:\/\/kaowsmk.wix.com\/alejandro\" target=\"_blank\">Alejandro soto martinessi<\/a>",
-            "imageID": "evk_by_alejandro_soto_martinessi",
-            "filename": "evk_by_alejandro_soto_martinessi.jpg",
-            "extension": ".jpg"
-        },
-        {
-            "id": "feelings_by_joshua_zeiler",
-            "title": "feelings",
-            "artist": "Joshua Zeiler (Zino)",
-            "artistlinks": "<a href=\"#\" target=\"_blank\">Joshua Zeiler<\/a>",
-            "imageID": "feelings_by_joshua_zeiler",
-            "filename": "feelings_by_joshua_zeiler.png",
-            "extension": ".png"
-        },
-        {
-            "id": "glaxy_zero_by_alejandro_soto_martinessi",
-            "title": "Glaxy Zero",
-            "artist": "Alejandro soto martinessi (Jin)",
-            "artistlinks": "<a href=\"http:\/\/kaowsmk.wix.com\/alejandro\" target=\"_blank\">Alejandro soto martinessi<\/a>",
-            "imageID": "glaxy_zero_by_alejandro_soto_martinessi",
-            "filename": "glaxy_zero_by_alejandro_soto_martinessi.jpg",
-            "extension": ".jpg"
-        },
-        {
-            "id": "jigoku_by_kent_haley",
-            "title": "Jigoku",
-            "artist": "Kent Haley (Kent)",
-            "artistlinks": "<a href=\"#\" target=\"_blank\">Kent Haley<\/a>",
-            "imageID": "jigoku_by_kent_haley",
-            "filename": "jigoku_by_kent_haley.png",
-            "extension": ".png"
-        },
-        {
-            "id": "nissim_by_parker_gibson",
-            "title": "Nissim",
-            "artist": "Parker Gibson (parker)",
-            "artistlinks": "<a href=\"#\" target=\"_blank\">Parker Gibson<\/a>",
-            "imageID": "nissim_by_parker_gibson",
-            "filename": "nissim_by_parker_gibson.jpg",
-            "extension": ".jpg"
-        },
-        {
-            "id": "nowhere-land_by_alejandro_soto_martinessi",
-            "title": "Nowhere-Land",
-            "artist": "Alejandro soto martinessi (Jin)",
-            "artistlinks": "<a href=\"http:\/\/kaowsmk.wix.com\/alejandro\" target=\"_blank\">Alejandro soto martinessi<\/a>",
-            "imageID": "nowhere-land_by_alejandro_soto_martinessi",
-            "filename": "nowhere-land_by_alejandro_soto_martinessi.jpg",
-            "extension": ".jpg"
-        },
-        {
-            "id": "ophion_and_nuwa_by_kent_haley",
-            "title": "Ophion and Nuwa",
-            "artist": "Kent Haley (Kent)",
-            "artistlinks": "<a href=\"#\" target=\"_blank\">Kent Haley<\/a>",
-            "imageID": "ophion_and_nuwa_by_kent_haley",
-            "filename": "ophion_and_nuwa_by_kent_haley.jpg",
-            "extension": ".jpg"
-        },
-        {
-            "id": "pop-world_by_alejandro_soto_martinessi",
-            "title": "Pop-World",
-            "artist": "Alejandro soto martinessi (Jin)",
-            "artistlinks": "<a href=\"http:\/\/kaowsmk.wix.com\/alejandro\" target=\"_blank\">Alejandro soto martinessi<\/a>",
-            "imageID": "pop-world_by_alejandro_soto_martinessi",
-            "filename": "pop-world_by_alejandro_soto_martinessi.jpg",
-            "extension": ".jpg"
-        },
-        {
-            "id": "rider_by_jaime_yusingbo",
-            "title": "Rider",
-            "artist": "Jaime Yusingbo (Jaime)",
-            "artistlinks": "<a href=\"https:\/\/www.behance.net\/jaimeyusingbo\" target=\"_blank\">Jaime Yusingbo<\/a>",
-            "imageID": "rider_by_jaime_yusingbo",
-            "filename": "rider_by_jaime_yusingbo.png",
-            "extension": ".png"
-        },
-        {
-            "id": "the_bull_dreams_of_elsewhere_by_kent_haley",
-            "title": "The Bull dreams of elsewhere",
-            "artist": "Kent Haley (Kent)",
-            "artistlinks": "<a href=\"#\" target=\"_blank\">Kent Haley<\/a>",
-            "imageID": "the_bull_dreams_of_elsewhere_by_kent_haley",
-            "filename": "the_bull_dreams_of_elsewhere_by_kent_haley.png",
-            "extension": ".png"
-        },
-        {
-            "id": "the_penthouse_by_alejandro_soto_martinessi",
-            "title": "The PentHouse",
-            "artist": "Alejandro soto martinessi (Jin)",
-            "artistlinks": "<a href=\"http:\/\/kaowsmk.wix.com\/alejandro\" target=\"_blank\">Alejandro soto martinessi<\/a>",
-            "imageID": "the_penthouse_by_alejandro_soto_martinessi",
-            "filename": "the_penthouse_by_alejandro_soto_martinessi.jpg",
-            "extension": ".jpg"
-        },
-        {
-            "id": "the_twilight_of_the_summer_by_alejandro_soto_martinessi",
-            "title": "The Twilight of the summer",
-            "artist": "Alejandro soto martinessi (Jin)",
-            "artistlinks": "<a href=\"http:\/\/kaowsmk.wix.com\/alejandro\" target=\"_blank\">Alejandro soto martinessi<\/a>",
-            "imageID": "the_twilight_of_the_summer_by_alejandro_soto_martinessi",
-            "filename": "the_twilight_of_the_summer_by_alejandro_soto_martinessi.jpg",
-            "extension": ".jpg"
-        },
-        {
-            "id": "waiting_of_the_afterglow_by_alejandro_soto_martinessi",
-            "title": "Waiting of the Afterglow",
-            "artist": "Alejandro soto martinessi (Jin)",
-            "artistlinks": "<a href=\"http:\/\/kaowsmk.wix.com\/alejandro\" target=\"_blank\">Alejandro soto martinessi<\/a>",
-            "imageID": "waiting_of_the_afterglow_by_alejandro_soto_martinessi",
-            "filename": "waiting_of_the_afterglow_by_alejandro_soto_martinessi.jpg",
-            "extension": ".jpg"
-        },
-        {
-            "id": "warschauer_strasse_by_daniel_kong",
-            "title": "Warschauer Strasse",
-            "artist": "Daniel Kong (bluep)",
-            "artistlinks": "<a href=\"#\" target=\"_blank\">Daniel Kong<\/a>",
-            "imageID": "warschauer_strasse_by_daniel_kong",
-            "filename": "warschauer_strasse_by_daniel_kong.jpg",
-            "extension": ".jpg"
-        },
-        {
-            "id": "yum_yum_cult_by_parker_gibson",
-            "title": "Yum Yum Cult",
-            "artist": "Parker Gibson (parker)",
-            "artistlinks": "<a href=\"#\" target=\"_blank\">Parker Gibson<\/a>",
-            "imageID": "yum_yum_cult_by_parker_gibson",
-            "filename": "yum_yum_cult_by_parker_gibson.jpg",
-            "extension": ".jpg"
+            "id": "always_by_ben_white3",
+            "title": "ALWAYS",
+            "artists": [
+                {
+                    "name": "Test 123",
+                    "url": "http://www.google.com"
+                }
+            ],
+            "type": "image",
+            "featured": true,
+            "imageID": "always_by_ben_white"
         }
-    ],
-    "photo": [],
-    "audio": [],
-    "collab": [],
-    "featured": []
+
+    ]
 }

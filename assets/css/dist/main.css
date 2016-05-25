@@ -713,7 +713,7 @@ footer .logo svg {
   border: 1px solid #000;
   text-transform: uppercase;
   box-sizing: border-box;
-  padding: 10px 50px;
+  padding: 10px 25px;
   margin-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
@@ -722,18 +722,20 @@ footer .logo svg {
   .single-art figcaption a {
     font-family: 'Montserrat'; }
   .single-art figcaption h1 {
-    font-size: 16px; }
+    font-size: 16px;
+    margin-top: 0; }
+  .single-art figcaption .artist-wrap {
+    border-bottom: 1px solid #202020;
+    padding-bottom: 5px;
+    margin-bottom: 5px; }
   .single-art figcaption .artist-title {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    border-bottom: 1px solid #202020;
-    padding-bottom: 10px;
-    margin-bottom: 5px; }
-    .single-art figcaption .artist-title a, .single-art figcaption .artist-title h2 {
-      font-size: 12px;
-      padding: 0 10px 0 0;
-      margin: 0; }
+    font-size: 12px; }
+    .single-art figcaption .artist-title a {
+      padding-left: 10px;
+      color: #00cc99; }
   .single-art figcaption .exhibit {
     font-size: 10px; }
   .single-art figcaption .single-art .exhibition-name {
@@ -760,7 +762,7 @@ footer .logo svg {
     flex-basis: 25%;
     box-sizing: border-box;
     padding: 10px;
-    margin: 0 0 25px 0; }
+    margin: 0; }
     .exhibit .artwork-list .artwork-thumbnail:hover figcaption {
       opacity: 1; }
     .exhibit .artwork-list .artwork-thumbnail a {
@@ -790,8 +792,14 @@ footer .logo svg {
       background: #0e0e0e;
       text-align: center;
       max-width: 90%;
+      margin: 0 auto;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       transition: opacity .25s;
       opacity: 0; }
+    .exhibit .artwork-list .artwork-thumbnail .artist-title:after {
+      content: '&';
+      color: #00cc99; }
+    .exhibit .artwork-list .artwork-thumbnail .artist-title:last-child:after {
+      display: none; }

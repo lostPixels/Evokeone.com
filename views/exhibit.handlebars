@@ -19,8 +19,18 @@
             <a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}} by {{this.artist}}">
                 <img src="/public/art/thumb/{{this.imageID}}.jpg" /></a>
                 <figcaption>
-                    <span><a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}} by {{this.artist}}">{{this.title}}</a></span>
-                    <span>{{{this.artistlinks}}}</span>
+                    <span>
+                        <a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}}">
+                            {{this.title}}
+                        <span class="artist-name">
+                            BY:
+                            {{#each this.artists}}
+                                <span class="artist-title">
+                                    {{this.name}}
+                                </span>
+                            {{/each}}
+                        </span>
+                        </a></span>
                 </figcaption>
         </figure>
 

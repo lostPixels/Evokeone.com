@@ -17,7 +17,7 @@
         border: 1px solid #000;
         text-transform: uppercase;
         box-sizing: border-box;
-        padding: 10px 50px;
+        padding: 10px 25px;
         margin-top: 10px;
         align-self: flex-end;
         max-width: 50%;
@@ -27,16 +27,19 @@
         }
         h1 {
             font-size: 16px;
+            margin-top: 0;
+        }
+        .artist-wrap{
+            border-bottom: 1px solid #202020;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
         }
         .artist-title {
             display: flex;
-            border-bottom: 1px solid #202020;
-            padding-bottom: 10px;
-            margin-bottom: 5px;
-            a, h2{
-                font-size: 12px;
-                padding: 0 10px 0 0;
-                margin: 0;
+            font-size: 12px;
+            a{
+                padding-left: 10px;
+                color: $global-green
             }
         }
         .exhibit {
