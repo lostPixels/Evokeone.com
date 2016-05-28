@@ -12,48 +12,248 @@
     },
     "art": [
         {
-            "id": "always_by_ben_white1",
+            "id": "always_by_ben_white",
             "title": "ALWAYS",
-            "artists": [
+            "artist": [
                 {
-                    "name": "Person 1",
-                    "url": "http://www.google.com"
-                },
-                {
-                    "name": "Person 2",
-                    "url": "http://www.google.com"
+                    "alias": "arklo",
+                    "website": "http:\/\/nvlnvl.co",
+                    "realname": "Ben White"
                 }
             ],
-            "type": "image",
-            "featured": true,
-            "imageID": "always_by_ben_white"
+            "fileID": "always_by_ben_white",
+            "featured": false,
+            "type": "audio"
         },
         {
-            "id": "always_by_ben_white2",
-            "title": "ALWAYS",
-            "artists": [
+            "id": "eternal_by_ben_white",
+            "title": "ETERNAL",
+            "artist": [
                 {
-                    "name": "Test 123",
-                    "url": "http://www.google.com"
+                    "alias": "arklo",
+                    "website": "http:\/\/nvlnvl.co",
+                    "realname": "Ben White"
                 }
             ],
-            "type": "image",
-            "featured": true,
-            "imageID": "always_by_ben_white"
+            "fileID": "eternal_by_ben_white",
+            "featured": false,
+            "type": "audio"
         },
         {
-            "id": "always_by_ben_white3",
-            "title": "ALWAYS",
-            "artists": [
+            "id": "everlast_by_the_fleeting_by_hiroshi",
+            "title": "Everlast by the Fleeting",
+            "artist": [
                 {
-                    "name": "Test 123",
-                    "url": "http://www.google.com"
+                    "alias": "Dragoon",
+                    "realname": "Hiroshi"
                 }
             ],
-            "type": "image",
-            "featured": true,
-            "imageID": "always_by_ben_white"
+            "fileID": "everlast_by_the_fleeting_by_hiroshi",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "evk_by_alejandro_soto_martinessi",
+            "title": "EVK",
+            "artist": [
+                {
+                    "alias": "Jin",
+                    "website": "http:\/\/kaowsmk.wix.com\/alejandro",
+                    "realname": "Alejandro soto martinessi"
+                }
+            ],
+            "fileID": "evk_by_alejandro_soto_martinessi",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "feelings_by_joshua_zeiler",
+            "title": "feelings",
+            "artist": [
+                {
+                    "alias": "Zino",
+                    "realname": "Joshua Zeiler"
+                }
+            ],
+            "fileID": "feelings_by_joshua_zeiler",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "glaxy_zero_by_alejandro_soto_martinessi",
+            "title": "Glaxy Zero",
+            "artist": [
+                {
+                    "alias": "Jin",
+                    "website": "http:\/\/kaowsmk.wix.com\/alejandro",
+                    "realname": "Alejandro soto martinessi"
+                }
+            ],
+            "fileID": "glaxy_zero_by_alejandro_soto_martinessi",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "jigoku_by_kent_haley",
+            "title": "Jigoku",
+            "artist": [
+                {
+                    "alias": "Kent",
+                    "realname": "Kent Haley"
+                }
+            ],
+            "fileID": "jigoku_by_kent_haley",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "nissim_by_parker_gibson",
+            "title": "Nissim",
+            "artist": [
+                {
+                    "alias": "parker",
+                    "realname": "Parker Gibson"
+                }
+            ],
+            "fileID": "nissim_by_parker_gibson",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "nowhere-land_by_alejandro_soto_martinessi",
+            "title": "Nowhere-Land",
+            "artist": [
+                {
+                    "alias": "Jin",
+                    "website": "http:\/\/kaowsmk.wix.com\/alejandro",
+                    "realname": "Alejandro soto martinessi"
+                }
+            ],
+            "fileID": "nowhere-land_by_alejandro_soto_martinessi",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "ophion_and_nuwa_by_kent_haley",
+            "title": "Ophion and Nuwa",
+            "artist": [
+                {
+                    "alias": "Kent",
+                    "realname": "Kent Haley"
+                }
+            ],
+            "fileID": "ophion_and_nuwa_by_kent_haley",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "pop-world_by_alejandro_soto_martinessi",
+            "title": "Pop-World",
+            "artist": [
+                {
+                    "alias": "Jin",
+                    "website": "http:\/\/kaowsmk.wix.com\/alejandro",
+                    "realname": "Alejandro soto martinessi"
+                }
+            ],
+            "fileID": "pop-world_by_alejandro_soto_martinessi",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "rider_by_jaime_yusingbo",
+            "title": "Rider",
+            "artist": [
+                {
+                    "alias": "Jaime",
+                    "website": "https:\/\/www.behance.net\/jaimeyusingbo",
+                    "realname": "Jaime Yusingbo"
+                }
+            ],
+            "fileID": "rider_by_jaime_yusingbo",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "the_bull_dreams_of_elsewhere_by_kent_haley",
+            "title": "The Bull dreams of elsewhere",
+            "artist": [
+                {
+                    "alias": "Kent",
+                    "realname": "Kent Haley"
+                }
+            ],
+            "fileID": "the_bull_dreams_of_elsewhere_by_kent_haley",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "the_penthouse_by_alejandro_soto_martinessi",
+            "title": "The PentHouse",
+            "artist": [
+                {
+                    "alias": "Jin",
+                    "website": "http:\/\/kaowsmk.wix.com\/alejandro",
+                    "realname": "Alejandro soto martinessi"
+                }
+            ],
+            "fileID": "the_penthouse_by_alejandro_soto_martinessi",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "the_twilight_of_the_summer_by_alejandro_soto_martinessi",
+            "title": "The Twilight of the summer",
+            "artist": [
+                {
+                    "alias": "Jin",
+                    "website": "http:\/\/kaowsmk.wix.com\/alejandro",
+                    "realname": "Alejandro soto martinessi"
+                }
+            ],
+            "fileID": "the_twilight_of_the_summer_by_alejandro_soto_martinessi",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "waiting_of_the_afterglow_by_alejandro_soto_martinessi",
+            "title": "Waiting of the Afterglow",
+            "artist": [
+                {
+                    "alias": "Jin",
+                    "website": "http:\/\/kaowsmk.wix.com\/alejandro",
+                    "realname": "Alejandro soto martinessi"
+                }
+            ],
+            "fileID": "waiting_of_the_afterglow_by_alejandro_soto_martinessi",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "warschauer_strasse_by_daniel_kong",
+            "title": "Warschauer Strasse",
+            "artist": [
+                {
+                    "alias": "bluep",
+                    "realname": "Daniel Kong"
+                }
+            ],
+            "fileID": "warschauer_strasse_by_daniel_kong",
+            "featured": false,
+            "type": "audio"
+        },
+        {
+            "id": "yum_yum_cult_by_parker_gibson",
+            "title": "Yum Yum Cult",
+            "artist": [
+                {
+                    "alias": "parker",
+                    "realname": "Parker Gibson"
+                }
+            ],
+            "fileID": "yum_yum_cult_by_parker_gibson",
+            "featured": false,
+            "type": "audio"
         }
-
     ]
 }
