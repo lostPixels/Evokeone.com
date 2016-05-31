@@ -16,25 +16,22 @@
 <!--TODO: CATEGORIES: featured, art, photography, audio, collaborations -->
     {{#each data.art}}
         <figure class="artwork-thumbnail">
-            <a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}} by {{this.artist}}">
-                <img src="/public/art/thumb/{{this.imageID}}.jpg" /></a>
+            <a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}}">
+                <img src="/public/art/thumb/{{this.id}}.jpg" /></a>
                 <figcaption>
                     <span>
                         <a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}}">
                             {{this.title}}
                         <span class="artist-name">
-                            BY:
-                            {{#each this.artists}}
+                            {{#each this.artist}}
                                 <span class="artist-title">
-                                    {{this.name}}
+                                    {{this.alias}}
                                 </span>
                             {{/each}}
                         </span>
                         </a></span>
                 </figcaption>
         </figure>
-
-
     {{/each}}
 
 

@@ -1,7 +1,6 @@
 .home {
     .introduction {
         position: relative;
-        background: url("../../img/homepage-hero-bg-1.jpg") center;
         background-size: cover;
         height: 400px;
         box-shadow: inset 0 0 150px rgba(12,12,12,1);
@@ -9,6 +8,14 @@
         margin: 0 0 50px;
         padding: 0;
         width: 100%;
+
+        @for $i from 1 through 6 {
+            &.background-#{$i} {
+                background: url("../../img/homepage-hero-bg-#{$i}.jpg") center;
+            }
+        }
+
+
     }
     .introduction:after {
         content: '';

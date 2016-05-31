@@ -371,7 +371,7 @@ h5 {
 p {
   font-size: 18px;
   line-height: 1.5em;
-  padding: 0 50px; }
+  margin-bottom: 35px; }
 
 a {
   color: #ddd;
@@ -504,15 +504,38 @@ footer .logo svg {
   text-transform: uppercase;
   padding: 15px 25px;
   text-decoration: none; }
+  .btn-lg:hover {
+    color: #064737;
+    background: #00ffbf; }
 
 .btn-lg img {
   display: inline-block;
   vertical-align: middle;
   margin-left: 10px; }
 
+.btn-minimal {
+  font-size: 12px;
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding: 5px 25px;
+  text-decoration: none; }
+  .btn-minimal:hover {
+    color: #888; }
+
 .archive .btn-wrap {
   margin-top: 50px;
-  text-align: center; }
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .archive .btn-wrap a {
+    margin: 25px 0; }
+  .archive .btn-wrap .divider {
+    font-family: 'Montserrat', sans-serif; }
 
 .exhibits h1 {
   text-align: center;
@@ -558,9 +581,42 @@ footer .logo svg {
   color: #0e0e0e;
   border: 1px solid #fff; }
 
+.history figure {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 300px;
+  float: left;
+  margin: 10px 40px 40px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); }
+  .history figure img {
+    max-width: 100%; }
+  .history figure figcaption {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #0e0e0e;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    min-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; }
+  .history figure.pull-right {
+    float: right;
+    margin: 10px 0px 40px 40px; }
+
 .home .introduction {
   position: relative;
-  background: url("../../img/homepage-hero-bg-1.jpg") center;
   background-size: cover;
   height: 400px;
   box-shadow: inset 0 0 150px #0c0c0c;
@@ -568,6 +624,18 @@ footer .logo svg {
   margin: 0 0 50px;
   padding: 0;
   width: 100%; }
+  .home .introduction.background-1 {
+    background: url("../../img/homepage-hero-bg-1.jpg") center; }
+  .home .introduction.background-2 {
+    background: url("../../img/homepage-hero-bg-2.jpg") center; }
+  .home .introduction.background-3 {
+    background: url("../../img/homepage-hero-bg-3.jpg") center; }
+  .home .introduction.background-4 {
+    background: url("../../img/homepage-hero-bg-4.jpg") center; }
+  .home .introduction.background-5 {
+    background: url("../../img/homepage-hero-bg-5.jpg") center; }
+  .home .introduction.background-6 {
+    background: url("../../img/homepage-hero-bg-6.jpg") center; }
 
 .home .introduction:after {
   content: '';
@@ -707,6 +775,22 @@ footer .logo svg {
   .single-art .art-wrapper .art-img {
     max-width: 100%;
     height: auto; }
+
+.single-art .artwork-navigator {
+  display: inline-block;
+  font-family: 'Montserrat';
+  font-size: 10px;
+  background-color: #0e0e0e;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+  .single-art .artwork-navigator a {
+    display: inline-block;
+    padding: 10px 15px; }
+
+.single-art figure {
+  padding: 0;
+  margin: 0; }
 
 .single-art figcaption {
   background-color: #0e0e0e;

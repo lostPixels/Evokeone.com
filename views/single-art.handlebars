@@ -1,12 +1,20 @@
+<nav class="artwork-navigator">
+	{{#if data.prev}}
+		<a href="/submission/{{data.exhibit.id}}/{{data.prev.id}}">Previous</a>
+	{{/if}}
+	{{#if data.next}}
+		<a href="/submission/{{data.exhibit.id}}/{{data.next.id}}">Next</a>
+	{{/if}}
+</nav>
 <figure class="art-wrapper">
-	<img class="art-img" src="/public/art/full/{{data.imageID}}.jpg">
+	<img class="art-img" src="/public/art/full/{{data.id}}.jpg">
 	<figcaption>
 		<h1 class="piece">{{data.title}}</h1>
 		<div class="artist-wrap">
 			<span class="artist-name">
-				{{#each data.artists}}
+				{{#each data.artist}}
 					<h2 class="artist-title">
-						{{this.name}}  <a class="artist-portfolio" href="{{this.url}}">( {{this.url}} )</a>
+						{{this.alias}} {{#if this.website}} <a class="artist-portfolio" href="{{this.website}}" title="{{this.website}}">( WEBSITE )</a>{{/if}}
 					</h2>
 				{{/each}}
 			</span>

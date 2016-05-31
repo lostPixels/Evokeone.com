@@ -13,4 +13,4 @@ app.set('view engine', 'handlebars');
 app.use(routes);
 app.use('/public', express.static('assets'));
 
-app.listen(3000);
+app.listen(3000, '127.0.0.1');

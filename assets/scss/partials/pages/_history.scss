@@ -1,0 +1,35 @@
+.history{
+
+    figure{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        float:left;
+        margin:10px 40px 40px 0;
+        box-shadow: 0 10px 30px rgba(0,0,0,.25);
+
+        img{
+            max-width: 100%;
+        }
+        figcaption{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $global-dk-grey;
+            border: 1px solid #000;
+            text-transform: uppercase;
+            font-size: 12px;
+            min-height: 40px;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+
+        &.pull-right{
+            float: right;
+            margin:10px 0px 40px 40px;
+        }
+    }
+
+
+
+}
