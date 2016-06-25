@@ -6,4 +6,19 @@
     </div>
 </div>
 
-<h1>List: {{memoriesList}}</h1>
+<section class="memories">
+{{#each memoryList.memories}}
+		<figure class="memory">
+			<h3>{{this.name}}</h3>
+			<q>{{this.comments}}</q>
+			<figcaption>{{this.date}}</figcaption>
+		</figure>
+    {{/each}}
+</section>
+
+<section class="memories-submit">
+{{#form "/test" class="form"}}
+	{{label "name" "Please enter your name"}}
+	{{input "firstname" "Richard"}}
+{{/form}}
+</section>

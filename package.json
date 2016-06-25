@@ -21,9 +21,14 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-image-resize": "^0.8.0",
     "gulp-sass": "^2.3.1",
+    "handlebars": "^4.0.5",
+    "handlebars-form-helpers": "^0.1.3",
     "lodash": "^4.12.0",
     "moment": "^2.13.0",
-    "mongoose": "^4.2.4"
+    "mongoose": "^4.2.4",
+    "node-couchdb": "^1.1.0",
+    "node-couchdb-plugin-memcached": "0.0.2",
+    "q": "^1.4.1"
   },
   "devDependencies": {
     "browser-sync": "^2.12.8",
