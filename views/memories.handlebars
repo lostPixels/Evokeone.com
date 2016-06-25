@@ -6,15 +6,32 @@
     </div>
 </div>
 
-<section class="memories">
+<section id="header-inset">
+<p>
+  In order to commemorate the efforts we've all put into Evoke over the years, we're leaving this section open to anyone to submit a thought or a memory about their time at Evoke.
+</p>
+</section>
+
+<section id="memories-list">
 {{#each memoryList.memories}}
 		{{> memory}}
 {{/each}}
 </section>
 
-<section class="memories-submit">
-{{#form "/test" class="form"}}
-	{{label "name" "Please enter your name"}}
-	{{input "firstname" "Richard"}}
+<section id="memories-submit">
+<p>Fill in your information below if you'd like to submit a memory. We welcome submissions from anyone, whether or not you were a member.</p>
+{{#form "/memories/add"}}
+	<p>
+    {{label "name" "Your Name:"}}
+    {{input "name" "your name here"}}
+  </p>
+  <p>
+    {{label "memory-text" "What you remember..."}}
+    {{textarea "memory-text" "I remember..."}}
+  </p>
+  <div class="g-recaptcha" data-sitekey="6LeUhiMTAAAAAILXLm5zWrjfub5cLXlQgA_8QzKE"></div>
+  <p>
+    {{submit "submit" "Post my memory."}}
+  </p>
 {{/form}}
 </section>
