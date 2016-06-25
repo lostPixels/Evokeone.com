@@ -8,12 +8,8 @@
 
 <section class="memories">
 {{#each memoryList.memories}}
-		<figure class="memory">
-			<h3>{{this.name}}</h3>
-			<q>{{this.comments}}</q>
-			<figcaption>{{this.date}}</figcaption>
-		</figure>
-    {{/each}}
+		{{> memory}}
+{{/each}}
 </section>
 
 <section class="memories-submit">

@@ -1,11 +1,7 @@
-// NOTE: memcached must be installed or this won't work :(
-
 const
     q = require('q'),
     CouchDB = require('node-couchdb'),
-    MemcacheNode = require('node-couchdb-plugin-memcached'),
     couch = new CouchDB({
-    cache: new MemcacheNode(),
     auth: {
         user: 'evoke',
         pass: 'vkdoer591'
