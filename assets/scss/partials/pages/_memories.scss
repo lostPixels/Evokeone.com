@@ -1,0 +1,39 @@
+.memories{
+  #memories-list{
+
+  }
+
+  #memories-list{
+    display: flex;
+    flex-direction:  row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #memories-list figure{
+    margin: 3px;
+    display: inline-block;
+    min-width: 300px;
+    flex: auto;
+    max-width: 800px;
+    flex-basis: 300px;
+    background-color: #121212;
+    padding: 7.5px 15px 15px 15px;
+    border: 2px solid #181818;
+  }
+
+  #memories-list h2{
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  #memories-list span{
+    color: #ee3333;
+  }
+
+  #memories-submit{
+  }
+}

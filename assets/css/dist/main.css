@@ -887,3 +887,44 @@ footer .logo svg {
       color: #00cc99; }
     .exhibit .artwork-list .artwork-thumbnail .artist-title:last-child:after {
       display: none; }
+
+.memories #memories-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.memories #memories-list figure {
+  margin: 3px;
+  display: inline-block;
+  min-width: 300px;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  max-width: 800px;
+  -webkit-flex-basis: 300px;
+  -ms-flex-preferred-size: 300px;
+  flex-basis: 300px;
+  background-color: #121212;
+  padding: 7.5px 15px 15px 15px;
+  border: 2px solid #181818; }
+
+.memories #memories-list h2 {
+  margin-bottom: 0px;
+  margin-top: 0px; }
+
+.memories #memories-list span {
+  color: #ee3333; }
