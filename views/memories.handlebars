@@ -24,10 +24,12 @@
 <section id="memories-form-wrap">
 <form id="memories-form">
   <span>Fill in your information below if you'd like to submit a memory. We welcome submissions from anyone, whether or not you were a member.</span>
+    <label for="title">Tagline:</label>
+    <input type="text" name="title" placeholder="I love Evoke" required />
     <label for="name">Your name:</label>
-    <input type="text" placeholder="John Snow" />
-    <label for="memory-text">Your Memory:</label>
-    <textarea name="memory-text" placeholder="I remember..."></textarea>
+    <input type="text" name="name" placeholder="John Snow" required />
+    <label for="comments">Your Memory:</label>
+    <textarea name="comments" placeholder="I remember..." required></textarea>
   <div id="captcha"></div>
     <input type="submit" id="add-memory" value="Post my memory." />
 </form>

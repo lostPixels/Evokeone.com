@@ -997,3 +997,6 @@ footer .logo svg {
   display: block;
   width: 300px;
   margin-bottom: 15px; }
+
+.memories .invalid {
+  border: 1px solid #ff0000 !important; }
