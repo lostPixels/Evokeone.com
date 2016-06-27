@@ -447,7 +447,7 @@ footer .logo svg {
 .section-wrap {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 50px 0 150px; }
+  padding: 50px 0 50px; }
 
 .clearfix:after {
   visibility: hidden;
@@ -929,11 +929,18 @@ footer .logo svg {
 .memories #memories-list span {
   color: #ee3333; }
 
+.memories #memories-form-wrap {
+  min-width: 300px;
+  margin-bottom: 0px;
+  display: none; }
+
 .memories #memories-form {
   width: 300px;
   padding: 15px;
+  margin: auto;
   background-color: #121212;
-  border: 2px solid #181818; }
+  border: 2px solid #181818;
+  margin-bottom: 0px; }
 
 .memories #memories-form span {
   font-size: 75%; }
@@ -948,16 +955,38 @@ footer .logo svg {
   margin-bottom: 5px; }
 
 .memories #memories-form input, .memories textarea {
-  width: 295px;
-  color: #303030;
+  width: 291px;
+  color: #989898;
   background-color: #222222;
   display: block;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  border-radius: 2px;
+  border: 1px solid #525252;
+  padding: 5px; }
 
-.memories #memories-form button {
-  width: 300px;
+.memories #memories-form input:focus, .memories textarea:focus {
+  background-color: #333333;
+  outline: none; }
+
+.memories button:active, .memories button:focus {
+  outline: none;
+  background-color: #333333;
+  color: #ee3333; }
+
+.memories ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #525252; }
+
+.memories #memories-form textarea {
+  height: 150px; }
+
+.memories button {
+  width: 303px;
   background-color: #222222;
-  margin-top: 15px; }
+  margin-top: 15px;
+  border-radius: 2px;
+  border: 1px solid #525252;
+  color: #989898; }
 
 .memories .g-recaptcha {
   display: block;
