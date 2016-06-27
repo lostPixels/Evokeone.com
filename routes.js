@@ -87,6 +87,7 @@ router.get('/memories/init', function(req, res) {
 });
 
 router.post('/memories', function(req, res) {
+  console.log(req);
     var memories = memoryModel.post();
     res.json({
         status: 'success'

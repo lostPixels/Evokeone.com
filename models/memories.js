@@ -44,8 +44,8 @@ function get(){
 
 */
 
-function save(){
-
+function post(){
+  console.log("DATA WAS POSTED TO SERVER");
 }
 
 // this is ugly as balls
@@ -102,3 +102,4 @@ function init(){
 
 exports.get = get;
 exports.init = init;
+exports.post = post;
