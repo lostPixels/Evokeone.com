@@ -1,8 +1,10 @@
-var express = require('express');
+var express = require('express'),
+  bodyParser = require('body-parser');
 var exhibitModel = require('./models/exhibits');
 var artworkModel = require('./models/artwork');
 var memoryModel = require('./models/memories');
 var router = express.Router();
+var parser = bodyParser.urlencoded({extended: true});
 
 router.param('exhibitID', function(req, res, next, id) {
   req.exhibit = {
@@ -86,11 +88,10 @@ router.get('/memories/init', function(req, res) {
     });
 });
 
-router.post('/memories', function(req, res) {
-  console.log(req);
-    var memories = memoryModel.post();
-    res.json({
-        status: 'success'
+router.post('/memories', parser, function(req, res) {
+    // needed because of async Captcha Code
+    memoryModel.post(req.body, function(response){
+      res.json(response);
     });
 });
 

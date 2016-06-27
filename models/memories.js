@@ -1,5 +1,7 @@
 const
     q = require('q'),
+    captcha = require('../util/captcha'),
+    dateFormat = require('dateformat'),
     CouchDB = require('node-couchdb'),
     couch = new CouchDB({
     auth: {
@@ -44,14 +46,24 @@ function get(){
 
 */
 
-function post(){
-  console.log("DATA WAS POSTED TO SERVER");
+function post(body, callback){
+  captcha.verify(body['captcha'], function(success){
+    // DEBUGGING so I don't have to keep solving those damn puzzles
+    success = true;
+    if(success){
+      // TODO: add it to database
+    }
+    body['success'] = success;
+    console.dir(body);
+    body['date'] = dateFormat(parseInt(body['date']), "mmmm dS, yyyy, h:MM TT");
+    callback(body);
+  });
 }
 
 // this is ugly as balls
 // look into way to make this prettier
 
-// install Q library :)
+// TODO: redo this with Q library
 function init(){
     console.log("I GOT CALLED");
     couch.dropDatabase('evoke-memories').then(

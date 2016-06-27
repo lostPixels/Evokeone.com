@@ -19,7 +19,7 @@ $(document).ready(function(){
     event.preventDefault();
 
     var payload = {
-      response: grecaptcha.getResponse(),
+      captcha: grecaptcha.getResponse(),
       date: Date.now()
     }
 
@@ -40,15 +40,22 @@ $(document).ready(function(){
     });
 
     if(valid){
-      $('#memories-form :input').prop('disabled', true);
+      //$('#memories-form :input').prop('disabled', true);
       $.ajax({
         url: 'memories',
         data: payload,
         type: "POST",
         dataType : "json"
       })
-      .done(function(json){
-        console.log(json);
+      .done(function(result){
+          if(result['success']){
+            $('#memories-list').prepend(Handlebars.templates.memory(result));
+            $('#memories-form :input').val("");
+            $('#memories-form-wrap').hide();
+            $('#show-add-memory').show();
+          }else{
+            $('#captcha').addClass('invalid');
+          }
       })
       .fail(function(xhr, status, errorThrown){
         alert("SOMETHING FUCKED UP");
@@ -57,11 +64,6 @@ $(document).ready(function(){
         console.dir(xhr);
       });
     }
-
-
-    // TODO: add AJAX code to verify captcha
-    // and then to add memory to list
-    // and then to post to server
   });
 
 });

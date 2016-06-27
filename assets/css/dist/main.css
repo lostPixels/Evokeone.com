@@ -932,7 +932,7 @@ footer .logo svg {
 .memories #memories-form-wrap {
   min-width: 300px;
   margin-bottom: 0px;
-  display: none; }
+  /* display: none; commented out for now */ }
 
 .memories #memories-form {
   width: 300px;
