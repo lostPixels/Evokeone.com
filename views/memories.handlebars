@@ -6,4 +6,31 @@
     </div>
 </div>
 
-<h1>List: {{memoriesList}}</h1>
+<section id="header-inset">
+<p>
+  In order to commemorate the efforts we've all put into Evoke over the years, we're leaving this section open to anyone to submit a thought or a memory about their time at Evoke.
+</p>
+</section>
+
+<section id="memories-list">
+{{#each memoryList.memories}}
+		{{> memory}}
+{{/each}}
+</section>
+
+<button id="show-add-memory" value="Add a memory.">Add a memory.</button>
+
+
+<section id="memories-form-wrap">
+<form id="memories-form">
+  <span>Fill in your information below if you'd like to submit a memory. We welcome submissions from anyone, whether or not you were a member.</span>
+    <label for="name">Your name:</label>
+    <input type="text" placeholder="John Snow" />
+    <label for="memory-text">Your Memory:</label>
+    <textarea name="memory-text" placeholder="I remember..."></textarea>
+  <div id="captcha"></div>
+    <input type="submit" id="add-memory" value="Post my memory." />
+</form>
+</section>
+
+<script src="public/js/memories-actions.js"></script>

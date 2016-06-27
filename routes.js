@@ -78,6 +78,14 @@ router.get('/memories', function(req, res) {
     });
 });
 
+router.get('/memories/init', function(req, res) {
+    resp = memoryModel.init();
+    res.render('dbdebug', {
+        wrapperClass: 'dbdebug',
+        resp: resp
+    });
+});
+
 router.post('/memories', function(req, res) {
     var memories = memoryModel.post();
     res.json({

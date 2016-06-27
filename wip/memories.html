@@ -7,10 +7,9 @@
 
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="/public/css/dist/main.css">
-    <script src="https://www.google.com/recaptcha/api.js?onload=captchaReady&render=explicit"
-            async defer>
-        </script>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="memories.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 
@@ -41,8 +40,55 @@
             </nav>
         </header>
 
-        <div class="section-wrap {{wrapperClass}}">
-            {{{body}}}
+        <div class="section-wrap memories">
+            
+<div class="hero-wrap">
+    <img src="/public/img/archive-hero.jpg">
+    <div class="hero-info">
+        <h1>Memories</h1>
+    </div>
+</div>
+
+<section id="header-inset">
+<p>
+  In order to commemorate the efforts we've all put into Evoke over the years, we're leaving this section open to anyone to submit a thought or a memory about their time at Evoke.
+</p>
+</section>
+
+<section id="memories-list">
+		<figure class="memory">
+		  <h3>testing 123</h3>
+		  <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt</q>
+		  <figcaption>march 1, 2017</figcaption>
+		</figure>
+		<figure class="memory">
+		  <h3>testing 3456</h3>
+		  <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt</q>
+		  <figcaption>march 1, 2017</figcaption>
+		</figure>
+		<figure class="memory">
+		  <h3>testing 6789</h3>
+		  <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt</q>
+		  <figcaption>march 1, 2017</figcaption>
+		</figure>
+</section>
+
+<section id="memories-submit">
+<p>Fill in your information below if you'd like to submit a memory. We welcome submissions from anyone, whether or not you were a member.</p>
+<form action="/memories/add" method="POST">	<p>
+    <label for="name">Your Name:</label>
+    <input name="name" id="name" value="your name here" type="text" />
+  </p>
+  <p>
+    <label for="memory-text">What you remember...</label>
+    <textarea name="memory-text" id="memory-text">I remember...</textarea>
+  </p>
+  <div class="g-recaptcha" data-sitekey="6LeUhiMTAAAAAILXLm5zWrjfub5cLXlQgA_8QzKE"></div>
+  <p>
+    <button name="submit" type="submit">Post my memory.</button>
+  </p>
+</form></section>
+
         </div>
     </div>
 

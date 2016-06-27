@@ -383,7 +383,9 @@ a {
 
 .page-wrap {
   min-height: 100%;
-  margin-bottom: -90px; }
+  margin-bottom: -90px;
+  margin-left: 15px;
+  margin-right: 15px; }
 
 .page-wrap:after {
   content: "";
@@ -445,7 +447,7 @@ footer .logo svg {
 .section-wrap {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 50px 0 150px; }
+  padding: 50px 0 50px; }
 
 .clearfix:after {
   visibility: hidden;
@@ -887,3 +889,111 @@ footer .logo svg {
       color: #00cc99; }
     .exhibit .artwork-list .artwork-thumbnail .artist-title:last-child:after {
       display: none; }
+
+.memories #memories-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.memories #memories-list figure {
+  margin: 3px;
+  display: inline-block;
+  min-width: 300px;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  max-width: 800px;
+  -webkit-flex-basis: 300px;
+  -ms-flex-preferred-size: 300px;
+  flex-basis: 300px;
+  background-color: #121212;
+  padding: 7.5px 15px 15px 15px;
+  border: 2px solid #181818; }
+
+.memories #memories-list h2 {
+  margin-bottom: 0px;
+  margin-top: 0px; }
+
+.memories #memories-list span {
+  color: #ee3333; }
+
+.memories #memories-form-wrap {
+  min-width: 300px;
+  margin-bottom: 0px;
+  display: none; }
+
+.memories #memories-form {
+  width: 300px;
+  padding: 15px;
+  margin: auto;
+  background-color: #121212;
+  border: 2px solid #181818;
+  margin-bottom: 0px; }
+
+.memories #memories-form span {
+  font-size: 75%; }
+
+.memories #memories-form label {
+  font-size: 75%;
+  font-family: 'Montserrat', sans-serif;
+  width: 295px;
+  display: block;
+  color: #ee3333;
+  margin-top: 15px;
+  margin-bottom: 5px; }
+
+.memories #memories-form input, .memories textarea {
+  width: 291px;
+  color: #989898;
+  background-color: #222222;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  border: 1px solid #525252;
+  padding: 5px; }
+
+.memories #memories-form input:focus, .memories textarea:focus {
+  background-color: #333333;
+  outline: none; }
+
+.memories ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #525252; }
+
+.memories #memories-form textarea {
+  height: 150px; }
+
+.memories #show-add-memory {
+  width: 100%; }
+
+.memories button {
+  background-color: #222222;
+  border-radius: 2px;
+  border: 1px solid #525252;
+  color: #989898; }
+
+.memories button:active, .memories button:focus {
+  outline: none;
+  background-color: #333333;
+  color: #ee3333; }
+
+.memories #add-memory {
+  width: 303px;
+  margin-top: 15px; }
+
+.memories .g-recaptcha {
+  display: block;
+  width: 300px;
+  margin-bottom: 15px; }
