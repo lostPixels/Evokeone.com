@@ -968,11 +968,6 @@ footer .logo svg {
   background-color: #333333;
   outline: none; }
 
-.memories button:active, .memories button:focus {
-  outline: none;
-  background-color: #333333;
-  color: #ee3333; }
-
 .memories ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #525252; }
@@ -980,14 +975,25 @@ footer .logo svg {
 .memories #memories-form textarea {
   height: 150px; }
 
+.memories #show-add-memory {
+  width: 100%; }
+
 .memories button {
-  width: 303px;
   background-color: #222222;
-  margin-top: 15px;
   border-radius: 2px;
   border: 1px solid #525252;
   color: #989898; }
 
+.memories button:active, .memories button:focus {
+  outline: none;
+  background-color: #333333;
+  color: #ee3333; }
+
+.memories #add-memory {
+  width: 303px;
+  margin-top: 15px; }
+
 .memories .g-recaptcha {
   display: block;
-  width: 300px; }
+  width: 300px;
+  margin-bottom: 15px; }

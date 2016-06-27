@@ -77,12 +77,6 @@
     outline: none;
   }
 
-  button:active, button:focus{
-    outline: none;
-    background-color: #333333;
-    color: #ee3333;
-  }
-
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #525252;
   }
@@ -91,18 +85,32 @@
     height: 150px;
   }
 
+  #show-add-memory{
+    width: 100%;
+  }
+
   button{
-    width: 303px;
     background-color: #222222;
-    margin-top: 15px;
     border-radius: 2px;
     border: 1px solid #525252;
     color: #989898;
   }
 
+  button:active, button:focus{
+    outline: none;
+    background-color: #333333;
+    color: #ee3333;
+  }
+
+  #add-memory{
+    width: 303px;
+    margin-top: 15px;
+  }
+
   .g-recaptcha {
     display: block;
     width: 300px;
+    margin-bottom: 15px;
   }
 
 }

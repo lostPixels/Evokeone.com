@@ -18,7 +18,7 @@
 {{/each}}
 </section>
 
-<button id="add-memory" value="Add a memory.">Add a memory.</button>
+<button id="show-add-memory" value="Add a memory.">Add a memory.</button>
 
 
 <section id="memories-form-wrap">
@@ -28,8 +28,8 @@
     <input type="text" placeholder="John Snow" />
     <label for="memory-text">Your Memory:</label>
     <textarea name="memory-text" placeholder="I remember..."></textarea>
-  <div class="g-recaptcha" data-theme="dark" data-sitekey="6LeUhiMTAAAAAILXLm5zWrjfub5cLXlQgA_8QzKE"></div>
-    <input type="submit" value="Post my memory." />
+  <div id="captcha"></div>
+    <input type="submit" id="add-memory" value="Post my memory." />
 </form>
 </section>
 
