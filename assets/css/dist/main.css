@@ -383,7 +383,9 @@ a {
 
 .page-wrap {
   min-height: 100%;
-  margin-bottom: -90px; }
+  margin-bottom: -90px;
+  margin-left: 15px;
+  margin-right: 15px; }
 
 .page-wrap:after {
   content: "";
@@ -903,9 +905,7 @@ footer .logo svg {
   align-content: flex-start;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  padding-left: 15px;
-  padding-right: 15px; }
+  justify-content: center; }
 
 .memories #memories-list figure {
   margin: 3px;
@@ -928,3 +928,37 @@ footer .logo svg {
 
 .memories #memories-list span {
   color: #ee3333; }
+
+.memories #memories-form {
+  width: 300px;
+  padding: 15px;
+  background-color: #121212;
+  border: 2px solid #181818; }
+
+.memories #memories-form span {
+  font-size: 75%; }
+
+.memories #memories-form label {
+  font-size: 75%;
+  font-family: 'Montserrat', sans-serif;
+  width: 295px;
+  display: block;
+  color: #ee3333;
+  margin-top: 15px;
+  margin-bottom: 5px; }
+
+.memories #memories-form input, .memories textarea {
+  width: 295px;
+  color: #303030;
+  background-color: #222222;
+  display: block;
+  margin-bottom: 15px; }
+
+.memories #memories-form button {
+  width: 300px;
+  background-color: #222222;
+  margin-top: 15px; }
+
+.memories .g-recaptcha {
+  display: block;
+  width: 300px; }

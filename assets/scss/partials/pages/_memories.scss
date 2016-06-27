@@ -9,8 +9,6 @@
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   #memories-list figure{
@@ -34,6 +32,44 @@
     color: #ee3333;
   }
 
-  #memories-submit{
+  #memories-form{
+    width: 300px;
+    padding: 15px;
+    background-color: #121212;
+    border: 2px solid #181818;
   }
+
+  #memories-form span{
+    font-size: 75%;
+  }
+
+  #memories-form label{
+    font-size: 75%;
+    font-family: 'Montserrat', sans-serif;
+    width: 295px;
+    display: block;
+    color: #ee3333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  #memories-form input, textarea{
+    width: 295px;
+    color: #303030;
+    background-color: #222222;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  #memories-form button{
+    width: 300px;
+    background-color: #222222;
+    margin-top: 15px;
+  }
+
+  .g-recaptcha {
+    display: block;
+    width: 300px;
+  }
+
 }

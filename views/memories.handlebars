@@ -18,20 +18,14 @@
 {{/each}}
 </section>
 
-<section id="memories-submit">
-<p>Fill in your information below if you'd like to submit a memory. We welcome submissions from anyone, whether or not you were a member.</p>
+<section id="memories-form">
+<span>Fill in your information below if you'd like to submit a memory. We welcome submissions from anyone, whether or not you were a member.</span>
 {{#form "/memories/add"}}
-	<p>
-    {{label "name" "Your Name:"}}
-    {{input "name" "your name here"}}
-  </p>
-  <p>
-    {{label "memory-text" "What you remember..."}}
-    {{textarea "memory-text" "I remember..."}}
-  </p>
-  <div class="g-recaptcha" data-sitekey="6LeUhiMTAAAAAILXLm5zWrjfub5cLXlQgA_8QzKE"></div>
-  <p>
+    <label for="name">Your name:</label>
+    <input type="text" placeholder="John Snow" />
+    <label for="memory-text">Your Memory:</label>
+    <textarea name="memory-text" placeholder="I remember..."></textarea>
+  <div class="g-recaptcha" data-theme="dark" data-sitekey="6LeUhiMTAAAAAILXLm5zWrjfub5cLXlQgA_8QzKE"></div>
     {{submit "submit" "Post my memory."}}
-  </p>
 {{/form}}
 </section>
