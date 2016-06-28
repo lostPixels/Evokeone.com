@@ -7,6 +7,8 @@ function captchaReady(){
   });
 }
 
+// TODO: refactor, divide into functions
+
 $(document).ready(function(){
 
   $('#show-add-memory').on('click', function(event){
@@ -50,7 +52,8 @@ $(document).ready(function(){
       .done(function(result){
           if(result['success']){
             $('#memories-list').prepend(Handlebars.templates.memory(result));
-            $('#memories-form :input').val("");
+            $('#memories-list').children().first().show(500);
+            $('#memories-form :input').not('[type=submit]').val("");
             $('#memories-form-wrap').hide();
             $('#show-add-memory').show();
           }else{

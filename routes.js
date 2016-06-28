@@ -73,18 +73,11 @@ router.get('/submission/:exhibitID/:submissionID', function(req, res) {
 });
 
 router.get('/memories', function(req, res) {
-    var memoryList = memoryModel.get();
-    res.render('memories', {
-        wrapperClass: 'memories',
-        memoryList: memoryList
-    });
-});
-
-router.get('/memories/init', function(req, res) {
-    resp = memoryModel.init();
-    res.render('dbdebug', {
-        wrapperClass: 'dbdebug',
-        resp: resp
+    memoryModel.get(function(memoryList){
+      res.render('memories', {
+          wrapperClass: 'memories',
+          memoryList: memoryList
+      });
     });
 });
 
@@ -92,6 +85,15 @@ router.post('/memories', parser, function(req, res) {
     // needed because of async Captcha Code
     memoryModel.post(req.body, function(response){
       res.json(response);
+    });
+});
+
+
+router.get('/db/init', function(req, res) {
+    resp = memoryModel.init();
+    res.render('dbdebug', {
+        wrapperClass: 'dbdebug',
+        resp: resp
     });
 });
 
