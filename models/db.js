@@ -1,5 +1,5 @@
 const
-  q = require('q'),
+  Q = require('q'),
   CouchDB = require('node-couchdb'),
   couch = new CouchDB({
   auth: {
@@ -29,7 +29,10 @@ const
     lists: {}
   };
 
-var sampleMemories = [
+  // set to false if production mode
+  var debug = true;
+
+var sampleContent = [
     {
         title:'I love Evoke',
         name:'James',
@@ -87,8 +90,20 @@ function listToDocs(rows, callback){
   });
 }
 
-function add(memory, callback){
-
+function add(item, callback){
+  couch.uniqid()
+    .then(function(id){
+      console.log(id);
+      item['_id'] = id[0];
+      return couch.insert(dbName, item);
+    })
+    .then(function(data, headers, status){
+      callback(data);
+    })
+    .catch(
+      function(err){
+        callback(err);
+      });
 }
 
 /*
@@ -113,24 +128,35 @@ function init(callback){
     couch.dropDatabase(dbName)
          .then(function() { return couch.createDatabase(dbName); })
          .then(function() { return couch.insert(dbName, ddoc); } )
-         .then(function() { return couch.uniqid(); })
-         .then(function(id){
-           console.dir(id);
-           return couch.insert(dbName, {
-               _id: id[0],
-               name: 'Testing 1337',
-               date: 'June 23, 2016',
-               comments: 'Yo yo yo couchDB in the hizzy.'
-           });
-         })
-        .then(function(response){
-          console.log(response.data);
-          callback(response);
-        })
-        .catch(function(err){
-          console.log(err);
-          callback(err);
+         .then(function() { return loadSampleContent(); })
+         .then(callback("Success!"))
+         .catch(function(err){
+           console.log(err);
+           callback(err);
         });
+}
+
+function loadSampleContent(){
+  if(debug){
+    // init to dummy promise
+    var promises = Array();
+    sampleContent.forEach(function(sample){
+      // add function uses a callback
+      // turn result into promise
+      console.log("added sample item");
+      console.dir(sample);
+      var deferred = Q.defer();
+      add(sample, function(result){
+        deferred.resolve(result);
+      });
+      promises.push(deferred);
+    });
+    return Q.allSettled(promises);
+  }else{
+    console.log("DOING NOTHING");
+    // does nothing if we're in production mode
+    return Q.fcall(function(){});
+  }
 }
 
 exports.list = list;
