@@ -1,8 +1,11 @@
-var express = require('express');
+var express = require('express'),
+  bodyParser = require('body-parser');
 var exhibitModel = require('./models/exhibits');
 var artworkModel = require('./models/artwork');
 var memoryModel = require('./models/memories');
+var dbModel = require('./models/db');
 var router = express.Router();
+var parser = bodyParser.urlencoded({extended: true});
 
 router.param('exhibitID', function(req, res, next, id) {
   req.exhibit = {
@@ -71,26 +74,29 @@ router.get('/submission/:exhibitID/:submissionID', function(req, res) {
 });
 
 router.get('/memories', function(req, res) {
-    var memoryList = memoryModel.get();
-    res.render('memories', {
-        wrapperClass: 'memories',
-        memoryList: memoryList
+    memoryModel.get(function(memoryList){
+      res.render('memories', {
+          wrapperClass: 'memories',
+          memoryList: memoryList
+      });
     });
 });
 
-router.get('/memories/init', function(req, res) {
-    resp = memoryModel.init();
-    res.render('dbdebug', {
-        wrapperClass: 'dbdebug',
-        resp: resp
+router.post('/memories', parser, function(req, res) {
+    // needed because of async Captcha Code
+    memoryModel.post(req.body, function(response){
+      res.json(response);
     });
 });
 
-router.post('/memories', function(req, res) {
-    var memories = memoryModel.post();
-    res.json({
-        status: 'success'
-    });
+
+router.get('/db/init', function(req, res) {
+    dbModel.init(function(resp){
+      res.render('dbdebug', {
+          wrapperClass: 'dbdebug',
+          resp: resp
+      });
+    })
 });
 
 module.exports = router;

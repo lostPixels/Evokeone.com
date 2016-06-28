@@ -1,17 +1,11 @@
 var express = require('express'),
     exphbs = require('express-handlebars'),
     routes = require('./routes'),
-    handlebars = require('handlebars'),
-    help = require('handlebars-form-helpers'),
     bodyParser = require('body-parser');
-
-// THIS WAS NOT STRAIGHTFORWARD AT ALL
-help.register(handlebars);
 
 var app = express();
 
 var hbs = exphbs.create({
-	helpers: help.helpers,
     defaultLayout: 'main'
 });
 
