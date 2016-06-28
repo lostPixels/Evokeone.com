@@ -21,6 +21,20 @@
     background-color: #121212;
     padding: 7.5px 15px 15px 15px;
     border: 2px solid #181818;
+    border-left: 8px solid #222222;
+    }
+
+  #memories-list figcaption{
+    font-size: 75%;
+    color: #cc8888;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #memories-list q {
+    color: #999999;
+    margin-left: 8px;
   }
 
   #memories-list h2{
@@ -30,6 +44,7 @@
 
   #memories-list span{
     color: #ee3333;
+    font-family: 'Montserrat', sans-serif;
   }
 
   #memories-form-wrap {
@@ -75,6 +90,10 @@
   #memories-form input:focus, textarea:focus{
     background-color: #333333;
     outline: none;
+  }
+
+  #memories-form input[type=submit]{
+    width:303px;
   }
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
