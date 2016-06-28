@@ -1,60 +1,77 @@
+// set to false if production mode
+var loadSample = true;
+
+// set to false if in production mode
+// IMPORTANT: setting this to true
+// means that someone can clear the memories list
+// by going to /db/init
+var developmentMode = true;
+
+// user and password info for database
+var dbLogin = {
+  user: 'evoke',
+  pass: 'vkdoer591'
+};
+
+// database name
+var dbName = "evoke-memories";
+
+// prefix for views in this database
+var viewPrefix = "_design/evoke/_view/";
+
+// design doc for database
+var ddoc = {
+  _id: '_design/evoke',
+  rewrites: [
+    { from: '_db',     to: '../..' },
+    { from: '_db/*',   to: '../../*' },
+    { from: '_ddoc',   to: '' },
+    { from: '_ddoc/*', to: '*' },
+    { from: '/',       to: 'index.html' },
+    { from: '/*',      to: '*' }
+  ],
+  // can add more views here if we ever need them
+  views: {
+    memories: {
+      map : 'function(doc){emit(doc.date, null); }'
+    }
+  },
+  shows: {},
+  lists: {}
+};
+
+// sample db content
+// could load from file
+// but fuck that
+var sampleContent = [
+  {
+      title:'I love Evoke',
+      name:'James',
+      date: '1490425200000',
+      comments:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt'
+  },
+  {
+      title: 'Evoke rocks!',
+      name:'Ted',
+      date: '1489561200000',
+      comments:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt'
+  },
+  {
+      title: 'GG NOOBS',
+      name:'DepthCore',
+      date: '1489993200000',
+      comments:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt'
+  }
+];
+
 const
   Q = require('q'),
   CouchDB = require('node-couchdb'),
   couch = new CouchDB({
-  auth: {
-  // SET THIS CORRECTLY!
-      user: 'evoke',
-      pass: 'vkdoer591'
-  }}),
-  viewPrefix = "_design/evoke/_view/",
-  dbName = "evoke-memories",
-  ddoc = {
-    _id: '_design/evoke',
-    rewrites: [
-      { from: '_db',     to: '../..' },
-      { from: '_db/*',   to: '../../*' },
-      { from: '_ddoc',   to: '' },
-      { from: '_ddoc/*', to: '*' },
-      { from: '/',       to: 'index.html' },
-      { from: '/*',      to: '*' }
-    ],
-    // can add more views here if we ever need them
-    views: {
-      memories: {
-        map : 'function(doc){emit(doc.date, null); }'
-      }
-    },
-    shows: {},
-    lists: {}
-  };
-
-  // set to false if production mode
-  var debug = true;
-
-var sampleContent = [
-    {
-        title:'I love Evoke',
-        name:'James',
-        date: '1490425200000',
-        comments:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt'
-    },
-    {
-        title: 'Evoke rocks!',
-        name:'Ted',
-        date: '1489561200000',
-        comments:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt'
-    },
-    {
-        title: 'GG NOOBS',
-        name:'DepthCore',
-        date: '1489993200000',
-        comments:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupt'
-    }
-];
+  auth: dbLogin
+});
 
 function list(view, callback){
-  console.log(viewPrefix + view);
   couch.get(dbName, viewPrefix + view)
     .then(
       function(data, headers, status){
@@ -93,7 +110,6 @@ function listToDocs(rows, callback){
 function add(item, callback){
   couch.uniqid()
     .then(function(id){
-      console.log(id);
       item['_id'] = id[0];
       return couch.insert(dbName, item);
     })
@@ -102,6 +118,7 @@ function add(item, callback){
     })
     .catch(
       function(err){
+        console.log(err);
         callback(err);
       });
 }
@@ -115,36 +132,42 @@ function del(callback){
 
 }
 
-// PROCEDURE:
-// 0. SET USERNAME AND PASSWORD --> not implemented
-// 1. DROP DB
-// 2. ADD DB
-// 3. UPLOAD DESIGN DOC
-// 4. put sample files (not in final release)
-
 // TODO: redo this with Q library
 function init(callback){
-
-    couch.dropDatabase(dbName)
+    // delete old database
+    if(developmentMode){
+      couch.dropDatabase(dbName)
+         // create databse
          .then(function() { return couch.createDatabase(dbName); })
+         // upload design document
          .then(function() { return couch.insert(dbName, ddoc); } )
+         // load sample content
          .then(function() { return loadSampleContent(); })
-         .then(callback("Success!"))
+         // callback
+         .then(function(){
+           // to avoid accidentally clearing the db
+           loadSample = false;
+           developmentMode = false;
+           callback("Success! Production mode enabled now.");
+         })
          .catch(function(err){
            console.log(err);
            callback(err);
         });
+    }else{
+      callback("Production mode active. Not initializing database.");
+    }
 }
 
+/*
+  LOADS SAMPLE CONTENT
+  Or does nothing if in production mode
+*/
 function loadSampleContent(){
-  if(debug){
+  if(loadSample){
     // init to dummy promise
     var promises = Array();
     sampleContent.forEach(function(sample){
-      // add function uses a callback
-      // turn result into promise
-      console.log("added sample item");
-      console.dir(sample);
       var deferred = Q.defer();
       add(sample, function(result){
         deferred.resolve(result);
@@ -153,7 +176,6 @@ function loadSampleContent(){
     });
     return Q.allSettled(promises);
   }else{
-    console.log("DOING NOTHING");
     // does nothing if we're in production mode
     return Q.fcall(function(){});
   }
