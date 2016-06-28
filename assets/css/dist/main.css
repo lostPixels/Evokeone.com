@@ -920,14 +920,27 @@ footer .logo svg {
   flex-basis: 300px;
   background-color: #121212;
   padding: 7.5px 15px 15px 15px;
-  border: 2px solid #181818; }
+  border: 2px solid #181818;
+  border-left: 8px solid #222222; }
+
+.memories #memories-list figcaption {
+  font-size: 75%;
+  color: #cc8888;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif; }
+
+.memories #memories-list q {
+  color: #999999;
+  margin-left: 8px; }
 
 .memories #memories-list h2 {
   margin-bottom: 0px;
   margin-top: 0px; }
 
 .memories #memories-list span {
-  color: #ee3333; }
+  color: #ee3333;
+  font-family: 'Montserrat', sans-serif; }
 
 .memories #memories-form-wrap {
   min-width: 300px;
@@ -967,6 +980,9 @@ footer .logo svg {
 .memories #memories-form input:focus, .memories textarea:focus {
   background-color: #333333;
   outline: none; }
+
+.memories #memories-form input[type=submit] {
+  width: 303px; }
 
 .memories ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
