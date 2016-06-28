@@ -1,9 +1,9 @@
 <nav class="artwork-navigator">
 	{{#if data.prev}}
-		<a href="/submission/{{data.exhibit.id}}/{{data.prev.id}}">Previous</a>
+		<a href="/submission/{{data.exhibit.id}}/{{data.prev.id}}" id="prevlink">Previous</a>
 	{{/if}}
 	{{#if data.next}}
-		<a href="/submission/{{data.exhibit.id}}/{{data.next.id}}">Next</a>
+		<a href="/submission/{{data.exhibit.id}}/{{data.next.id}}" id="nextlink">Next</a>
 	{{/if}}
 </nav>
 <figure class="art-wrapper">
@@ -22,3 +22,4 @@
 		<a href="/exhibits/{{data.exhibit.id}}" class="exhibit">Exhibition {{data.exhibit.number}}:<span class="exhibition-name">{{data.exhibit.title}}</span></a>
 	</figcaption>
 </figure>
+<script src="/public/js/nav.js"></script>
