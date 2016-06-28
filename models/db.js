@@ -21,9 +21,7 @@ const
     // can add more views here if we ever need them
     views: {
       memories: {
-        map : function(doc){
-          emit(doc.date, null);
-        }
+        map : 'function(doc){emit(doc.date, null); }'
       }
     },
     shows: {},
@@ -65,6 +63,12 @@ function list(view, callback){
     );
 }
 
+/*
+
+  Iterates over a list of rows returned by CouchDB.
+  Calls callback function when all rows are done being requested from dB.
+
+*/
 function listToDocs(rows, callback){
   var docs = [];
   rows.forEach(function(row){
@@ -103,51 +107,29 @@ function del(callback){
 // 4. put sample files (not in final release)
 
 // TODO: redo this with Q library
-function init(){
-    console.log("I GOT CALLED");
-    couch.dropDatabase('evoke-memories').then(
-        function(){
-            console.log("DROPPED DATABASE");
-            couch.createDatabase(dbName).then(
-                function(){
-                    console.log("CREATED DATABASE");
+function init(callback){
 
-                    // HERE IS WHERE IT BREAKS
-                    couch.uniqid().then(
-                        function(ids){
-                            console.log("GOT ID " + ids[0]);
-                            couch.insert(dbName, {
-                                _id: ids[0],
-
-                                name: 'Testing 1337',
-                                date: 'June 23, 2016',
-                                comments: 'Yo yo yo couchDB in the hizzy.'
-                            }).then(
-                                function(response){
-                                    console.log("DATA: " + response.data + " STATUS " + response.status);
-                                    return response;
-                                },
-                                function(err){
-                                    console.log("JESUS CHRIST I GOT IN THIS FAR AND YOU STILL GAVE ME AN ERROR");
-                                    console.log("FUCK YOU NODE. Here's the error: ");
-                                    console.log(err);
-                                }
-                            )
-                        },
-                        function(err){
-                            console.log("SOMETHING FUCKED UP");
-                            console.log(err);
-                        }
-                    )
-                },
-                function(err){
-                    console.log("Error creating database " + err);
-                }
-            )
-        },
-        function(err){
-            console.log("Error dropping database " + err);
-    });
+    couch.dropDatabase(dbName)
+         .then(function() { return couch.createDatabase(dbName); })
+         .then(function() { return couch.insert(dbName, ddoc); } )
+         .then(function() { return couch.uniqid(); })
+         .then(function(id){
+           console.dir(id);
+           return couch.insert(dbName, {
+               _id: id[0],
+               name: 'Testing 1337',
+               date: 'June 23, 2016',
+               comments: 'Yo yo yo couchDB in the hizzy.'
+           });
+         })
+        .then(function(response){
+          console.log(response.data);
+          callback(response);
+        })
+        .catch(function(err){
+          console.log(err);
+          callback(err);
+        });
 }
 
 exports.list = list;

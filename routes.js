@@ -3,6 +3,7 @@ var express = require('express'),
 var exhibitModel = require('./models/exhibits');
 var artworkModel = require('./models/artwork');
 var memoryModel = require('./models/memories');
+var dbModel = require('./models/db');
 var router = express.Router();
 var parser = bodyParser.urlencoded({extended: true});
 
@@ -90,11 +91,12 @@ router.post('/memories', parser, function(req, res) {
 
 
 router.get('/db/init', function(req, res) {
-    resp = memoryModel.init();
-    res.render('dbdebug', {
-        wrapperClass: 'dbdebug',
-        resp: resp
-    });
+    dbModel.init(function(resp){
+      res.render('dbdebug', {
+          wrapperClass: 'dbdebug',
+          resp: resp
+      });
+    })
 });
 
 module.exports = router;
