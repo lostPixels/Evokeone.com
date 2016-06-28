@@ -14,17 +14,26 @@ function get(callback){
     });
 }
 
-function post(body, callback){
-  captcha.verify(body['captcha'], function(success){
+function post(data, callback){
+  captcha.verify(data['captcha'], function(success){
     // DEBUGGING so I don't have to keep solving those damn puzzles
-    success = true;
-    if(success){
-      // TODO: add it to database
+    // success = true;
+
+    function cb(result){
+      console.log(result);
+      data['success'] = success;
+      data['date'] = formatDate(data['date']);
+      callback(data);
     }
-    body['success'] = success;
-    console.dir(body);
-    body['date'] = formatDate(body['date']);
-    callback(body);
+
+    if(success){
+      // don't need to store captcha result
+      delete data['captcha'];
+      memoryDB.add(data, cb);
+    }else{
+      cb("Captcha Failed!");
+    }
+
   });
 }
 
