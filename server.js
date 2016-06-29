@@ -1,12 +1,15 @@
 var express = require('express'),
     exphbs = require('express-handlebars'),
     routes = require('./routes'),
-    bodyParser = require('body-parser');
+    bodyParser = require('body-parser'),
+    // boolean operator helper
+    extraHelpers = require('./util/handlebar-helper');
 
 var app = express();
 
 var hbs = exphbs.create({
-    defaultLayout: 'main'
+    defaultLayout: 'main',
+    helpers: extraHelpers.helpers()
 });
 
 app.engine('handlebars', hbs.engine);
