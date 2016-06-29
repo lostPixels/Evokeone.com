@@ -34,9 +34,9 @@ $(document).ready(function(){
 
   function fade2(){
     var newColor = Math.floor((Math.random() * colors.length));
-    var newFont = Math.floor((Math.random() * fonts.length));
+    // var newFont = Math.floor((Math.random() * fonts.length));
     $('#splash-text').css('color', colors[newColor]);
-    $('#splash-text').css('font-family', fonts[newFont]);
+    // $('#splash-text').css('font-family', fonts[newFont]);
     $('#splash-text').fadeIn(1000, fade1);
   }
 
