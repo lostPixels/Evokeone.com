@@ -10,10 +10,6 @@
 </div>
 
 <div class="artwork-list">
-<!--TODO: do this for each type of art -->
-<!--TODO: make hasXXX for each category to determine whether to output -->
-<!--TODO: and make category labels (i.e. nice big text) -->
-<!--TODO: CATEGORIES: featured, art, photography, audio, collaborations -->
     {{#each data.art}}
         <figure class="artwork-thumbnail">
             <a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}}">

@@ -99,4 +99,8 @@ router.get('/db/init', function(req, res) {
     })
 });
 
+router.get('/splash',function(req, res) {
+      res.render('splash', {layout: 'splash'});
+});
+
 module.exports = router;
