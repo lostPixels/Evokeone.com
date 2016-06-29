@@ -9,6 +9,21 @@
     </div>
 </div>
 
+<section id="exhibition-info">
+  <span>{{{data.description}}}</span>
+  <nav role="nav">
+    <!-- for now only interview. Eventually links to types of art -->
+    <a href="/interview/{{data.id}}">Read Interview with {{data.interviewArtist}}</a>
+  </nav>
+</section>
+<!--
+
+  TODO: interview link
+        description - add to JSON
+        interview artist etc - add to JSON
+
+-->
+
 <div class="artwork-list">
     {{#each data.art}}
         <figure class="artwork-thumbnail">
