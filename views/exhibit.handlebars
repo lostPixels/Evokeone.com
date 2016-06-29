@@ -1,5 +1,5 @@
 <div class="hero-wrap">
-    <img src="http://placehold.it/1000x200">
+    <img src="/public/img/banner/{{data.title}}.jpg">
     <div class="hero-info">
         <h1>{{data.number}} {{data.title}}</h1>
         <div class="tertiary-info">
@@ -17,7 +17,11 @@
     {{#each data.art}}
         <figure class="artwork-thumbnail">
             <a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}}">
-                <img src="/public/art/thumb/{{this.id}}.jpg" /></a>
+                {{#compare this.type "audio" operator="=="}}
+                  <img src="/public/art/thumb/audiothumb.jpg" /></a>
+                {{else}}
+                  <img src="/public/art/thumb/{{this.id}}.jpg" /></a>
+                {{/compare}}
                 <figcaption>
                     <span>
                         <a href="/submission/{{@../id}}/{{this.id}}" title="{{this.title}}">
