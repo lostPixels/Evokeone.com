@@ -890,6 +890,38 @@ footer .logo svg {
     .exhibit .artwork-list .artwork-thumbnail .artist-title:last-child:after {
       display: none; }
 
+.exhibit #exhibition-info {
+  max-width: 700px;
+  min-width: 400px;
+  margin: auto; }
+  .exhibit #exhibition-info span {
+    display: block;
+    width: 100%;
+    border: 2px solid #000000;
+    background-color: rgba(18, 18, 18, 0.75);
+    padding: 15px;
+    text-align: center; }
+  .exhibit #exhibition-info nav {
+    display: block;
+    width: 75%;
+    text-align: center;
+    margin: auto; }
+    .exhibit #exhibition-info nav a {
+      display: inline-block;
+      color: #ddd;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 14px 5px;
+      margin: 0 8px;
+      margin-top: -2px; }
+      .exhibit #exhibition-info nav a:hover {
+        color: #00cc99; }
+      .exhibit #exhibition-info nav a.highlighted:after {
+        color: red;
+        content: '*'; }
+
 .memories #memories-list {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -918,7 +950,7 @@ footer .logo svg {
   -webkit-flex-basis: 300px;
   -ms-flex-preferred-size: 300px;
   flex-basis: 300px;
-  background-color: #121212;
+  background-color: rgba(18, 18, 18, 0.75);
   padding: 7.5px 15px 15px 15px;
   border: 2px solid #181818;
   border-left: 8px solid #222222; }
