@@ -1,4 +1,4 @@
-function helpers(){
+function helpers(Handlebars){
   return {
     compare: function(lvalue, rvalue, options) {
 
@@ -29,7 +29,7 @@ function helpers(){
             return options.inverse(this);
         }
 
-    }
+    },
   };
 }
 

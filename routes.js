@@ -3,6 +3,7 @@ var express = require('express'),
 var exhibitModel = require('./models/exhibits');
 var artworkModel = require('./models/artwork');
 var memoryModel = require('./models/memories');
+var interviewModel = require('./models/interviews');
 var dbModel = require('./models/db');
 var router = express.Router();
 var parser = bodyParser.urlencoded({extended: true});
@@ -49,6 +50,14 @@ router.get('/exhibits/forever', function(req, res) {
     res.render('exhibit', {
         wrapperClass: 'exhibit',
         data: exhibitData
+    });
+});
+
+router.get('/interviews/forever', function(req, res) {
+    var interviewData = interviewModel.get('forever');
+    res.render('interview', {
+        wrapperClass: 'interview',
+        data: interviewData
     });
 });
 
