@@ -1,0 +1,17 @@
+<section id="interview">
+  <h2>Interview with {{data.artist}} for {{data.exhibition}}</h2>
+  <h3>Interviewed by {{data.interviewer}}</h3>
+
+  <div id="interview-description">
+    {{data.description}}
+  </div>
+
+  <article id="interview-content">
+    {{#each data.segments}}
+      <div class="interview-segment">
+        <!-- this was stupid hard to figure out -->
+        {{> (lookup . 'type')}}
+      </div>
+    {{/each}}
+  </article
+</section>

@@ -1,0 +1,24 @@
+{
+  "interviewer" : "Ted Yavuzkurt",
+  "artist" : "Jin",
+  "exhibition" : "Forever",
+  "description" : "I interviewed Jin and he was a pretty cool guy and doesn't afraid of anything",
+  "segments" : [
+    {
+      "type" : "interview-question",
+      "interviewer" : "Ted",
+      "artist" : "Jin",
+      "question" : "Tell me about yourself",
+      "response" : "I'm a pretty cool dude. I'm going to repeat this a few times so I can see what a long question looks like. Oops here's a line break. <br /> Better use triple braces to include this or it won't work. Okay I think this looks like enough text maybe just a little more for good measure.<br /><br />Fuck it why not include some more line breaks. Oh wait, maybe I should do paragraphs.<p>Here's a paragraph.</p><p>And here's another. Okay I'm done.</p>"
+    },
+    {
+        "type" : "interview-picture",
+        "id" : "bad_trip_by_jaime_yusingboand_alejandro_soto_martinessi",
+        "caption" : "Bad Trip by Jin"
+    },
+    {
+      "type" : "interview-quote",
+      "quote" : "I love to make digital art it gets me jollies going."
+    }
+  ]
+}
