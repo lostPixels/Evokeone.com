@@ -108,6 +108,13 @@ router.get('/db/init', function(req, res) {
     })
 });
 
+router.get('/artistcenter', function(req, res){
+  res.writeHead(301,
+    {Location: 'http://www.evokeone.net/artistcenter'}
+  );
+  res.end();
+});
+
 router.get('/splash',function(req, res) {
       res.render('splash', {layout: 'splash'});
 });

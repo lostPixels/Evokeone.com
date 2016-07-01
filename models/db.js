@@ -7,9 +7,9 @@ var loadSample = true;
 // by going to /db/init
 var developmentMode = true;
 
-// user and password info for database
 var dbLogin = {
-  user: 'evoke',
+  user: process.env.DBUSER,
+  pass: process.env.DBPASS
 };
 
 // database name
