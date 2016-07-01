@@ -1,0 +1,19 @@
+<section id="interview">
+  <h2>Interview with {{data.artist}} for {{data.exhibition}}</h2>
+  <h3>Interviewed by {{data.interviewer}}</h3>
+
+  <div id="interview-description">
+    {{data.description}}
+  </div>
+
+  <article id="interview-content">
+    Interview coming soon! Check back on July 4th!
+    {{#each data.segments}}
+      <div class="interview-segment">
+        <!-- this was stupid hard to figure out -->
+        <!-- I set interview-segment to display:none for now -->
+        {{> (lookup . 'type')}}
+      </div>
+    {{/each}}
+  </article
+</section>

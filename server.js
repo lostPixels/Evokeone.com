@@ -19,3 +19,14 @@ app.use(routes);
 app.use('/public', express.static('assets'));
 
 app.listen(3000, '127.0.0.1');
+
+checkVars();
+
+function checkVars(){
+  checkVars = ['DBPASS','DBUSER'];
+  checkVars.forEach(function(v){
+      if(!process.env[v]){
+        console.error("WARNING: Variable " + v + " not set! Server may not work properly.");
+      }
+  });
+}

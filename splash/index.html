@@ -1,27 +1,22 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+
+    <!-- Standalone Splash Page -->
     <meta charset="utf-8">
     <title>EvokeOne - Digital Art, Music and Photography</title>
 
-    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" type="text/css" href="/public/css/dist/main.css">
-    <script src="https://www.google.com/recaptcha/api.js?onload=captchaReady&render=explicit"
-            async defer>
-        </script>
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="/public/js/handlebars.runtime.min.js"></script>
-    <script src="/public/js/memory.js"></script>
 </head>
 <body>
 
     <div class="page-wrap">
         <header>
-            <a class="logo" href="/">
+            <a class="logo">
                 <svg version="1.1"xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"x="0px"y="0px"width="820px"height="414px"viewBox="0 0 820 414"enable-background="new 0 0 820 414"xml:space="preserve">
                     <g>
                         <path d="M0, 15.482v90.277h221.306v146.162l146.23, 146.23h49.899L800.105, 15.482H651.198
@@ -37,23 +32,46 @@
 
             <h3 class="logo-tagline">10 Years of Digital Art, Music, and Photography</h3>
 
-            <nav role="navigation">
-                <a href="/archive" title="Archive">Archive</a>
-                <a class="highlighted" href="/exhibits/forever" title="forever exhibit">Forever Exhibit</a>
-                <a href="/history" title="History of Evokeone">History</a>
-                <!-- <a href="/members" title="Archive">Members</a> -->
-                <a href="/memories" title="Shared Memories">Memories</a>
-            </nav>
         </header>
 
-        <main class="section-wrap {{wrapperClass}}">
-            {{{body}}}
-        </main>
-    </div>
+            <div id="splash-text">
+  Coming soon...
+</div>
+
+<script>
+$(document).ready(function(){
+
+  var colors = [
+    "#d63200",
+    "#d952a0",
+    "#dc6a00",
+    "#fdf600",
+    "#96f100",
+    "#264fff",
+    "#9bfcff",
+    "#b364ff",
+    "#ffffff"
+  ];
+
+  function fade1(){
+    $('#splash-text').fadeOut(1000, fade2);
+  }
+
+  function fade2(){
+    var newColor = Math.floor((Math.random() * colors.length));
+    $('#splash-text').css('color', colors[newColor]);
+    $('#splash-text').fadeIn(1000, fade1);
+  }
+
+  fade1();
+
+});
+
+</script>
 
 
     <footer>
-        <a class="logo" href="/">
+        <a class="logo">
             <svg version="1.1"xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"x="0px"y="0px"width="820px"height="414px"viewBox="0 0 820 414"enable-background="new 0 0 820 414"xml:space="preserve">
                 <g>
                     <path d="M0, 15.482v90.277h221.306v146.162l146.23, 146.23h49.899L800.105, 15.482H651.198
@@ -69,7 +87,5 @@
         <p class="disclaimer">All work and copyright respectively owned by the Evoke Artists.<br>Don't reproduce commercially without explicit permission.</p>
 
     </footer>
-
-    <script src="/public/js/main.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@ var express = require('express'),
 var exhibitModel = require('./models/exhibits');
 var artworkModel = require('./models/artwork');
 var memoryModel = require('./models/memories');
+var interviewModel = require('./models/interviews');
 var dbModel = require('./models/db');
 var router = express.Router();
 var parser = bodyParser.urlencoded({extended: true});
@@ -52,6 +53,14 @@ router.get('/exhibits/forever', function(req, res) {
     });
 });
 
+router.get('/interviews/forever', function(req, res) {
+    var interviewData = interviewModel.get('forever');
+    res.render('interview', {
+        wrapperClass: 'interview',
+        data: interviewData
+    });
+});
+
 router.get('/history', function(req, res) {
     res.render('history', {
         wrapperClass: 'history'
@@ -97,6 +106,13 @@ router.get('/db/init', function(req, res) {
           resp: resp
       });
     })
+});
+
+router.get('/artistcenter', function(req, res){
+  res.writeHead(301,
+    {Location: 'http://www.evokeone.net/artistcenter'}
+  );
+  res.end();
 });
 
 router.get('/splash',function(req, res) {

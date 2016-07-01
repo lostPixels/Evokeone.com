@@ -67,5 +67,55 @@
         }
     }
 
+    #exhibition-info{
+      max-width: 700px;
+      min-width: 400px;
+      margin: auto;
+
+      span{
+        display: block;
+        width: 100%;
+        border: 2px solid #000000;
+        background-color: rgba(18,18,18, 0.75);
+        padding: 15px;
+        text-align: center;
+        p {
+          margin-bottom: 7px;
+          margin-top: 7px;
+          text-align: left;
+          text-indent: 25px;
+          font-size: 100%;
+        }
+      }
+      nav {
+    	    display: block;
+          width: 75%;
+          text-align: center;
+          margin: auto;
+    		a {
+    		    display: inline-block;
+    		    color: $global-lt-grey;
+    		    font-family: 'Montserrat', sans-serif;
+    		    text-transform: uppercase;
+    		    text-decoration: none;
+    		    font-size: 14px;
+    		    padding: 14px 5px;
+    		    margin: 0 8px;
+            // background: $global-dk-grey;
+            // border: 2px solid black;
+            margin-top: -2px;
+            // width: 100px;
+    			&:hover{
+    				color: $global-green;
+    			}
+    			&.highlighted{
+    				&:after{
+    					color: $global-pink;
+    					content: '*';
+    				}
+    		  }
+    }
+  }
+}
 
 }

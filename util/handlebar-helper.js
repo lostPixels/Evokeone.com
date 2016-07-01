@@ -28,7 +28,6 @@ function helpers(){
         } else {
             return options.inverse(this);
         }
-
     }
   };
 }
