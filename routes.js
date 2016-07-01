@@ -8,6 +8,8 @@ var dbModel = require('./models/db');
 var router = express.Router();
 var parser = bodyParser.urlencoded({extended: true});
 
+var splash = false;
+
 router.param('exhibitID', function(req, res, next, id) {
   req.exhibit = {
     id: id
@@ -24,11 +26,19 @@ router.param('submissionID', function(req, res, next, id) {
 });
 
 
-router.get('/', function(req, res) {
-    res.render('home', {
-        wrapperClass: 'home'
-    });
-});
+router.get('/', renderHome);
+
+// so that we can toggle splash page easily
+// this is a terrible way to do this but
+// this is not an enterprise site
+
+// could include a JSON file with this data if
+// we needed to...
+function renderHome(req, res){
+    var page = ((splash)?"splash":"home");
+    var params = ((splash)?{layout : "splash"}:{wrapperClass : "home"});
+    res.render(page, params);
+}
 
 /** Removing until we add all the art packs.
 app.get('/exhibit/', function(req, res) {
@@ -118,5 +128,14 @@ router.get('/artistcenter', function(req, res){
 router.get('/splash',function(req, res) {
       res.render('splash', {layout: 'splash'});
 });
+
+// toggles splash page on or off
+router.get('/splash/toggle', function(req, res){
+      splash = !(splash);
+      console.log("NOTE: SPLASH " + ((splash)?"ACTIVATED":"DEACTIVATED"));
+      renderHome(req, res);
+});
+
+
 
 module.exports = router;
