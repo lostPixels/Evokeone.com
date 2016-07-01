@@ -431,13 +431,15 @@ header {
 
 footer {
   background: #111111;
-  text-align: center; }
+  text-align: center;
+  padding: 50px 0; }
 
 footer .disclaimer {
   color: #ddd;
   font-size: 10px;
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 0; }
 
 footer .logo svg {
   width: 50px;
@@ -767,13 +769,26 @@ footer .logo svg {
   display: table-cell;
   vertical-align: middle; }
 
+.single-art.expanded {
+  max-width: inherit; }
+  .single-art.expanded .art-wrapper {
+    display: block; }
+  .single-art.expanded .art-img {
+    width: inherit;
+    max-width: inherit;
+    display: block;
+    margin: 0 auto; }
+
 .single-art .art-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .single-art .art-wrapper .art-img {
     max-width: 100%;
     height: auto; }
@@ -890,43 +905,35 @@ footer .logo svg {
     .exhibit .artwork-list .artwork-thumbnail .artist-title:last-child:after {
       display: none; }
 
-.exhibit #exhibition-info {
-  max-width: 700px;
-  min-width: 400px;
+.exhibit #exhibition-info span {
+  display: block;
+  border: 2px solid #000000;
+  background-color: rgba(18, 18, 18, 0.75);
+  padding: 50px;
+  text-align: left; }
+  .exhibit #exhibition-info span p {
+    font-size: 16px; }
+
+.exhibit #exhibition-info nav {
+  display: block;
+  width: 75%;
+  text-align: center;
   margin: auto; }
-  .exhibit #exhibition-info span {
-    display: block;
-    width: 100%;
-    border: 2px solid #000000;
-    background-color: rgba(18, 18, 18, 0.75);
-    padding: 15px;
-    text-align: center; }
-    .exhibit #exhibition-info span p {
-      margin-bottom: 7px;
-      margin-top: 7px;
-      text-align: left;
-      text-indent: 25px;
-      font-size: 100%; }
-  .exhibit #exhibition-info nav {
-    display: block;
-    width: 75%;
-    text-align: center;
-    margin: auto; }
-    .exhibit #exhibition-info nav a {
-      display: inline-block;
-      color: #ddd;
-      font-family: 'Montserrat', sans-serif;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-size: 14px;
-      padding: 14px 5px;
-      margin: 0 8px;
-      margin-top: -2px; }
-      .exhibit #exhibition-info nav a:hover {
-        color: #00cc99; }
-      .exhibit #exhibition-info nav a.highlighted:after {
-        color: red;
-        content: '*'; }
+  .exhibit #exhibition-info nav a {
+    display: inline-block;
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 14px 5px;
+    margin: 0 8px;
+    margin-top: -2px; }
+    .exhibit #exhibition-info nav a:hover {
+      color: #00cc99; }
+    .exhibit #exhibition-info nav a.highlighted:after {
+      color: red;
+      content: '*'; }
 
 .memories #memories-list {
   display: -webkit-flex;
