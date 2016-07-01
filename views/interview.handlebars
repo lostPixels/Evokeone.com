@@ -7,9 +7,11 @@
   </div>
 
   <article id="interview-content">
+    Interview coming soon! Check back on July 4th!
     {{#each data.segments}}
       <div class="interview-segment">
         <!-- this was stupid hard to figure out -->
+        <!-- I set interview-segment to display:none for now -->
         {{> (lookup . 'type')}}
       </div>
     {{/each}}

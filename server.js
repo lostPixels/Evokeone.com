@@ -9,7 +9,7 @@ var app = express();
 
 var hbs = exphbs.create({
     defaultLayout: 'main',
-    helpers = extraHelpers.helpers()
+    helpers: extraHelpers.helpers()
 });
 
 app.engine('handlebars', hbs.engine);
