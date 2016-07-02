@@ -2,6 +2,11 @@ $global-green: #00cc99;
 $global-pink: red;
 $global-dk-grey: #0e0e0e;
 $global-lt-grey: #ddd;
+$global-med-grey: #181818;
+$global-med-grey-border: #222222;
+$global-pink2: #ee4444;
+$global-light-pink: #cc8888;
+$global-semi-grey: rgba(18, 18, 18, 0.75);
 
 @mixin headline-font{
     font-family: 'Montserrat', sans-serif;

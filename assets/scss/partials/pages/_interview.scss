@@ -1,7 +1,143 @@
 .interview{
 
-  .interview-segment{
-    display: none;
+.hero-info{
+
+  h1,h3{
+    display: block;
+    margin: 0px;
   }
+
+  h3{
+    margin-top: -15px;
+    margin-bottom: -15px;
+    color: grey;
+  }
+
+}
+
+#interview-content{
+    display: block;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+
+
+
+    //background: $global-semi-grey;
+    //border: 2px solid $global-med-grey;
+
+
+    div{
+        display: block;
+        width: 100%;
+        max-width: 800px;
+        font-size: 13pt;
+
+        padding: 0px;
+        //border-left: 8px solid $global-med-grey-border;
+        margin: 7px auto 8px auto;
+
+        .interview-image{
+            height: 200px;
+            width: 100%;
+            background-position: center;
+            background-size:cover;
+            overflow: hidden;
+            border: 2px solid $global-dk-grey;
+            a{
+              font-family: "Montserrat", sans-serif;
+              color: $global-lt-grey;
+            }
+            figcaption{
+              width: 100%;
+              height: 100%;
+              display: block;
+              div{
+                width: 100%;
+                height: 50px;
+                background-color: black;
+                position: relative;
+                bottom: -150px;
+                opacity: .6;
+                padding: 0px;
+                &:hover{
+                  opacity: .9;
+                }
+                span{
+                  text-align: left;
+                  display: inline-block;
+                  width: 100%;
+                  padding: 10px;
+                  font-size: 12pt;
+                  margin-top: 2px;
+                  &:hover{
+                    color: $global-green;
+                  }
+                }
+              }
+            }
+        }
+
+        figure{
+          margin: auto;
+          figcaption{
+            opacity: 0;
+          }
+          &:hover{
+            figcaption{
+              opacity: 1;
+            }
+          }
+        }
+
+
+        label{
+          display: inline-block;
+          margin-left: -55px;
+          text-align: right;
+          width: 50px;
+          position: relative;
+          margin-top: 0px;
+          top: 0px;
+        }
+
+        .question {
+          label{
+            color: $global-pink;
+          }
+          span{
+            color: #ccc;
+          }
+        }
+
+        .response{
+          label{
+            color: $global-green;
+          }
+          span{
+            color: grey;
+          }
+        }
+
+        p{
+          display: inline-flex;
+          text-indent: 15px;
+          margin-top: 0px;
+          margin-bottom: 7px;
+          line-height: 135%;
+          font-size: inherit;
+        }
+
+
+
+        p:first-of-type{
+          text-indent: 0px;
+        }
+
+  }
+}
 
 }

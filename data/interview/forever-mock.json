@@ -1,13 +1,13 @@
 {
-  "interviewer" : "Ted Yavuzkurt",
-  "artist" : "Jin",
+  "interviewer1" : "Ted Yavuzkurt",
+  "artist" : "Alejandro Soto Martinessi",
   "exhibition" : "Forever",
-  "description" : "",
+  "exhibition-id" : "forever",
+  "description" : "Interview coming soon! Check back on July 4th!",
   "segments" : [
     {
       "type" : "interview-question",
-      "interviewer" : "Ted",
-      "artist" : "Jin",
+      "int-id": 1,
       "question" : "Tell me about yourself",
       "response" : "I'm a pretty cool dude. I'm going to repeat this a few times so I can see what a long question looks like. Oops here's a line break. <br /> Better use triple braces to include this or it won't work. Okay I think this looks like enough text maybe just a little more for good measure.<br /><br />Fuck it why not include some more line breaks. Oh wait, maybe I should do paragraphs.<p>Here's a paragraph.</p><p>And here's another. Okay I'm done.</p>"
     },
