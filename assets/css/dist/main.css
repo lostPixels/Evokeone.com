@@ -525,6 +525,10 @@ footer .logo svg {
   .btn-minimal:hover {
     color: #888; }
 
+.featherlight-content, .featherlight-close-icon {
+  background-color: #0e0e0e !important;
+  color: #ddd !important; }
+
 .archive .btn-wrap {
   margin-top: 50px;
   text-align: center;
@@ -1114,7 +1118,7 @@ footer .logo svg {
           background-color: black;
           position: relative;
           bottom: -150px;
-          opacity: .6;
+          opacity: .8;
           padding: 0px; }
           .interview #interview-content div .interview-image figcaption div:hover {
             opacity: .9; }
