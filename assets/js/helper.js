@@ -1,7 +1,4 @@
-if( document.querySelector('.section-wrap.home') ) {
-    var randomBG = 'background-'+(Math.ceil( Math.random() * 6));
-    document.querySelector('.introduction').classList.add(randomBG);
-}
+// swaps text in an element
 
 $(document).ready(function(){
   jQuery.fn.extend({

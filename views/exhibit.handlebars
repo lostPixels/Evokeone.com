@@ -4,18 +4,40 @@
         <h1>{{data.number}} {{data.title}}</h1>
         <div class="tertiary-info">
             <span class="date">{{data.releaseDate}}</span>
-            <span class="submission-count">{{data.art.length}} submissions<span>
+            <span class="submission-count">{{data.art.length}} submissions</span>
+            <nav role="nav">
+              <!-- for now only interview. Eventually links to types of art -->
+              <a href="#" id="newsToggle">Show News Release</a>
+              <a href="/interviews/{{data.id}}">Read Interview with {{data.interviewArtist}}</a>
+            </nav>
         </div>
     </div>
+    <section id="exhibition-info">
+      <div id="exhibition-description">{{{data.description}}}</div>
+
+    </section>
 </div>
 
-<section id="exhibition-info">
-  <span>{{{data.description}}}</span>
-  <nav role="nav">
-    <!-- for now only interview. Eventually links to types of art -->
-    <a href="/interviews/{{data.id}}">Read Interview with {{data.interviewArtist}}</a>
-  </nav>
-</section>
+<script>
+
+  $(document).ready(function(){
+    $('#newsToggle').click(function(evt){
+      evt.preventDefault();
+      swaptext();
+      $('#exhibition-description').animate({
+        opacity: "toggle",
+        height: "toggle"
+      },500);
+    });
+
+    function swaptext(){
+      $('#newsToggle').toggleText('Show News Release', 'Hide News Release');
+    }
+
+  });
+
+</script>
+
 <!--
 
   TODO: interview link
