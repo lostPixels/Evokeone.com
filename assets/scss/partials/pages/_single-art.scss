@@ -1,8 +1,21 @@
 .single-art {
 
+    &.expanded{
+        max-width: inherit;
+        .art-wrapper{
+            display: block;
+        }
+        .art-img{
+            width: inherit;
+            max-width: inherit;
+            display: block;
+            margin: 0 auto;
+        }
+    }
     .art-wrapper{
         display: flex;
         flex-direction: column;
+        align-items: center;
         .art-img{
             max-width: 100%;
             height: auto;

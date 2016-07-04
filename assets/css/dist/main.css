@@ -431,13 +431,15 @@ header {
 
 footer {
   background: #111111;
-  text-align: center; }
+  text-align: center;
+  padding: 50px 0; }
 
 footer .disclaimer {
   color: #ddd;
   font-size: 10px;
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 0; }
 
 footer .logo svg {
   width: 50px;
@@ -771,13 +773,26 @@ footer .logo svg {
   display: table-cell;
   vertical-align: middle; }
 
+.single-art.expanded {
+  max-width: inherit; }
+  .single-art.expanded .art-wrapper {
+    display: block; }
+  .single-art.expanded .art-img {
+    width: inherit;
+    max-width: inherit;
+    display: block;
+    margin: 0 auto; }
+
 .single-art .art-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .single-art .art-wrapper .art-img {
     max-width: 100%;
     height: auto; }
