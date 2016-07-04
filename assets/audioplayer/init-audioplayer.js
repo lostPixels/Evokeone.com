@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
     var jsFolder = "";
     for (var i= 0; i< scripts.length; i++)
     {
-        if( scripts[i].src && scripts[i].src.match(/init-listplayer\.js/i))
+        if( scripts[i].src && scripts[i].src.match(/init-audioplayer\.js/i))
             jsFolder = scripts[i].src.substr(0, scripts[i].src.lastIndexOf("/") + 1);
     }
     jQuery("#audioplayer").amazingaudioplayer({
@@ -53,7 +53,7 @@ jQuery(document).ready(function(){
         forcehtml5:false,
         showprevnext:true,
         backgroundimage:"",
-        autoplay:false,
+        autoplay: autoPlay,
         volumebarpadding:8,
         progressheight:8,
         showtracklistbackgroundimage:false,
@@ -63,7 +63,7 @@ jQuery(document).ready(function(){
         tracklistarrowimageheight:16,
         heightmode:"auto",
         titleinbarformat:"%TITLE%",
-        showtracklist:true,
+        showtracklist: showTracklist,
         stopimageheight:24,
         volumeimageheight:24,
         stopimagewidth:24,
