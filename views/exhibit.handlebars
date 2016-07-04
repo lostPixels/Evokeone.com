@@ -14,37 +14,24 @@
     </div>
     <section id="exhibition-info">
       <div id="exhibition-description">{{{data.description}}}</div>
-
     </section>
 </div>
 
-<script>
-
-  $(document).ready(function(){
-    $('#newsToggle').click(function(evt){
-      evt.preventDefault();
-      swaptext();
-      $('#exhibition-description').animate({
-        opacity: "toggle",
-        height: "toggle"
-      },500);
-    });
-
-    function swaptext(){
-      $('#newsToggle').toggleText('Show News Release', 'Hide News Release');
-    }
-
-  });
-
-</script>
-
-<!--
-
-  TODO: interview link
-        description - add to JSON
-        interview artist etc - add to JSON
-
--->
+<script src="/public/js/exhibit.js"></script>
+<script src="/public/audioplayer/init-listplayer.js"></script>
+  <!-- Insert to your webpage where you want to display the audio player -->
+  <div id="audioplayer" style="display:block;position:relative;width:420px;height:auto;margin:0px auto 0px;">
+      <ul class="amazingaudioplayer-audios" style="display:none;">
+          <li data-artist="CP-R" data-title="Version 2 by CP-R" data-album="Final Evoke" data-info="" data-image="" data-duration="323">
+              <div class="amazingaudioplayer-source" data-src="/public/art/full/version_2_by_cp-r.mp3" data-type="audio/mpeg" />
+          </li>
+          <li data-artist="Adrian Piciorea" data-title="Music that Evoked One Smile Forever by Adrian Piciorea" data-album="" data-info="" data-image="" data-duration="135">
+              <div class="amazingaudioplayer-source" data-src="/public/art/full/music_that_evoked_one_smile_forever_by_adrian_piciorea.mp3" data-type="audio/mpeg" />
+          </li>
+      </ul>
+      <div class="amazingaudioplayer-engine"><a href="http://amazingaudioplayer.com" title="html5 audio player">html5 audio player</a></div>
+  </div>
+  <!-- End of body section HTML codes -->
 
 <div class="artwork-list">
     {{#each data.art}}
