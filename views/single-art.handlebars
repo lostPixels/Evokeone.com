@@ -7,7 +7,11 @@
 	{{/if}}
 </nav>
 <figure class="art-wrapper">
-	<img class="art-img" src="/public/art/full/{{data.id}}.jpg">
+	{{#compare data.type "audio" operator="=="}}
+		{{> audio-player}}
+	{{else}}
+		<img class="art-img" src="/public/art/full/{{data.id}}.jpg">
+	{{/compare}}
 	<figcaption>
 		<h1 class="piece">{{data.title}}</h1>
 		<div class="artist-wrap">

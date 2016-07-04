@@ -1,0 +1,132 @@
+{
+  "interviewer1" : "Ted Yavuzkurt",
+  "artist" : "Alejandro Soto Martinessi",
+  "exhibition" : "Forever",
+  "exhibition-id" : "forever",
+  "description" : "Alejandro Soto Martinessi is a long-time Evoke member and a master of psychedelic, twisted imagery.",
+  "segments" : [
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "Who is Alejandro Soto Martinessi? Where are you from / how old are you / what is a fun fact about yourself you'd like us to know?",
+      "response" : "<p>I'm a graphic artist based in Valparaiso, Chile.</p><p>I was born in Mendoza, Argentina. My mother is half Italian, half Argentinian. My father is Chilean.</p><p>I am 29 years old, I like movies, music, comic books and video games.</p><p>I consider myself an extrovert who likes to live to the limit!</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "How did you come up with the name \"Jin\" ?",
+      "response" : "<p>Jin was a character in a comic I drew when I was young.</p><p>He was a creature that lived in a world where many creatures like him lived in anarchy. Punk rock, drugs, and garbage reigned. I picked \"Berdeem\" referring to Aberdeen, hometown of the punk musician Kurt Cobain, who has been my hero since my childhood.</p><p>I always had an affinity for writing, music and drawing.</p><p>When I was a child, I drew for entire afternoons. I forgot everything else.</p><p>At school, my notebooks had more doodles and sketches than class notes. Drawing and music are both very important to me, but my first outlet was drawing.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "Tell me a bit about how you got started in art. Did you download a copy of photoshop and start playing around? Did you like to paint as a kid? Did you start as a musician then move to digital art?",
+      "response" : "<p>I discovered the world of digital art thanks to DeviantArt, tag forums and such.</p><p>The first time I saw digital artworks, I said, \"Shit! It's incredible that software can make something like this, I definitely want to try it!\"</p>"
+    },
+    {
+        "type" : "interview-picture",
+        "id" : "glaxy_zero_by_alejandro_soto_martinessi",
+        "caption" : "Glaxy Zero by Jin",
+        "offset" : 22
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "I see from your bio that you got started \"accidentally\"? What do you mean? Did you just go on DeviantArt one day and decide to try art? Did a friend of yours get into art and you followed?",
+      "response" : "<p>I belonged to a community where there were different servers for online games. Part of it was an experimental game console people could use to create MMORPGs. They also had design subforums, where people shared tags and avatars (they were incredibly fashionable at the time). That was when I started to familiarize myself with platforms like Photoshop, then sites like DeviantArt, and later on art groups.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "How would you describe your artistic style today? What words come to mind? How has your style evolved over time to where it is now?",
+      "response" : "<p>I think the correct way to describe my style would be: \"vectorized photo manipulation.\"</p><p>Here is what I do: I collect graphic images, extract information from them for later vectorization, and then create a scene. I also say that what I do is collage--that is correct too.</p><p>The first serious art group that I joined was EvokeOne. It helped me, motivating me to be better, to want to stand out, and to make things properly. I think from then to now, I have come a long way. It has been worth all the sacrifice.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "When you started out, you said you read lots of tutorials and guides. What did you find to be the most useful? What was not helpful?",
+      "response" : "<p>Yes! I read guides and manuals like crazy. They didn't explain enough for what I wanted to do, but they did show me the purpose of each tool. This was very helpful later.</p><p>It is good that people take some of their time and help with things like this. There is nothing better than working together as a team and giving each other feedback.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "Tell me a bit about your workflow. Do you sketch art by hand and then start? Do you make a piece in one session or do you do a little work here and a little work later? How do you decide when a piece is finished?",
+      "response" : "<p>I need to have experienced something to get inspired! Music, cinema, experiences, places ... many things are responsible! Having fulfilled this rite, things just come instantly. When you work from a concept things are much easier than trying to find your way without an address.</p><p>I draw the elements that I will use in the piece in Illustrator. I switch back and forth between Illustrator and Photoshop, putting together what I want as if it were a puzzle. The line work in Illustrator, the scene in Photoshop.</p><p>In any work of art or craft, there is a climax when the artist knows to stop. I know something is finished because I know I have enjoyed it enough already.</p>"
+    },
+    {
+        "type" : "interview-picture",
+        "id" : "nowhere-land_by_alejandro_soto_martinessi",
+        "caption" : "Nowhere-Land by Jin"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "Where do you get your inspiration? Do you go around thinking about art you want to make? Do you use nature / music / feelings / events in your life to get ideas?",
+      "response" : "<p>Manga, comics, literature and music should be my favorite sources.</p><p>But what is undoubtedly the primary catalyst are my moods and life experiences. So I'll be in a transition whenever I have an artistic period, which is explicitly due to the events I'm going through.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "When you make a piece, do you know what you want it to look like? Or do you just sit down and start drawing and see what happens?",
+      "response" : "<p>I know what I want, but things change. They have a metamorphosis, so each piece always ends up being a surprise. It's half and half.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "Your work is extremely psychedelic and surreal. When you work, do you tend to think a lot \"what should I add to this? How am I going to make this?\" Or do you not think at all? Are you just \"in the zone\" with your piece?",
+      "response" : "<p>I do not have an exact picture of what I want to do. I try several things to find out what is the place of everything. That transition is the most difficult being honest. But once things get arranged, the final phase goes much more fluidly.</p>"
+    },
+    {
+        "type" : "interview-picture",
+        "id" : "the_twilight_of_the_summer_by_alejandro_soto_martinessi",
+        "caption" : "The Twilight of the summer by Jin"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "Pick out your favorite piece from this exhibition and tell me about it. How long did it take you to make? What was your thinking when you started it? Did it turn out the way you expected? How did you make it (briefly)?",
+      "response" : "<p>My favorite piece was \"the twilight of the summer\".</p><p>I had a clear idea of what he wanted, which was death to new life ... transmutation. The cycle has come to an end. Energy, and spirit.</p><p>I took about 27 hours to finish. Some things changed but that is completely normal, as happens in all my works. The end result left me happy, because it was very close to what I wanted.</p><p>I made the basic stage, then added the characters, then the substantial elements. After that I did colors and textures.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "How have groups like Evoke and DepthCore helped your development as an artist?",
+      "response" : "<p>When you're surrounded by talented people, good people, you have a great challenge. You have to keep up. That is the key ingredient to improve a lot in a short time.</p><p>Digital art collectives taught me that way. I owe them a lot and I'm very grateful. For me, Evoke and DepthCore are places where I feel at home.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "What do you see is the future of groups like Evoke and dC? It seems today many groups are becoming inactive and stagnant. Do you think online art is dying? Or do you think it just needs to take on a new form?",
+      "response" : "<p>I see Evoke and DepthCore as brands ... important brands born independently, with love and dedication. Their work is not for sale.</p><p>Today we live in a new graphics art era when it comes to media. Digital art collectives should be able to adapt to it.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "Please tell us the best part of your experience as an Evoke member -- what is one thing you want to remember from the group now that we're shutting down?",
+      "response" : "<p> The people that I saw go through here, the experiences in the process of building the exhibitions, the time invested in making us better artists, individual quality and team quality ... it is sad to think of the group closing. I like to see this as a process of evolution ... </p>"
+    },
+    {
+        "type" : "interview-picture",
+        "id" : "bad_trip_by_jaime_yusingboand_alejandro_soto_martinessi",
+        "caption" : "Bad Trip by Jin and Jaime"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "What is one piece of advice you would give to a new artist? How can someone who is just starting out get better and make something meaningful? Is there anything you wish you could go back in time and tell yourself when you were just starting out?",
+      "response" : "<p>I would tell new artists to experiment and to monitor themselves. Stay open to others--don't confuse a suggestion with a critique. And do what you like until the end. I would say that if you change your path, never lose sight of the true goal. Also, try to help other artists in need.</p><p>Things are not impossible. There is no perfection without many flaws.</p><p>You have to be persistent and show people who criticize you that you're happier than they are. I wish I had the support of my loved ones when I started.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "",
+      "response" : "<p>Unfortunately, my parents never wanted to support my music or art ... By saying I had no support, I mean did not have help to get pencils or materials. I never received a guitar on any Christmas.</p><p>I never got their support when I wanted to study music or arts. I had to earn it all myself.</p><p> I would tell people who have the same problem, go ahead, make up the resources, because later they will change their minds.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
+      "question" : "Any last thoughts you want to tell us before we wrap this up?",
+      "response" : "<p>I love you guys.</p><p>I thank you for giving me a place in this team, and for all you all have done for me. For the good friends I made, and giving people the opportunity to fulfill our goals, to do what we love.</p>"
+    }
+  ]
+}

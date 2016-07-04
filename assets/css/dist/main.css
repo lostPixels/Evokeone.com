@@ -527,6 +527,10 @@ footer .logo svg {
   .btn-minimal:hover {
     color: #888; }
 
+.featherlight-content, .featherlight-close-icon {
+  background-color: #0e0e0e !important;
+  color: #ddd !important; }
+
 .archive .btn-wrap {
   margin-top: 50px;
   text-align: center;
@@ -843,9 +847,19 @@ footer .logo svg {
     color: #ff3366; }
 
 .exhibit .hero-info {
+  z-index: 10;
   line-height: 1em; }
   .exhibit .hero-info .tertiary-info {
     font-size: 12px; }
+    .exhibit .hero-info .tertiary-info a {
+      color: inherit; }
+      .exhibit .hero-info .tertiary-info a:hover {
+        color: #00cc99; }
+      .exhibit .hero-info .tertiary-info a:after {
+        content: " // ";
+        color: #00cc99; }
+      .exhibit .hero-info .tertiary-info a:last-child:after {
+        content: ""; }
   .exhibit .hero-info .date:after {
     content: ' // ';
     color: #00cc99; }
@@ -878,9 +892,9 @@ footer .logo svg {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       text-transform: uppercase;
       font-size: 11px;
       text-decoration: none; }
@@ -905,35 +919,25 @@ footer .logo svg {
     .exhibit .artwork-list .artwork-thumbnail .artist-title:last-child:after {
       display: none; }
 
-.exhibit #exhibition-info span {
-  display: block;
-  border: 2px solid #000000;
-  background-color: rgba(18, 18, 18, 0.75);
-  padding: 50px;
-  text-align: left; }
-  .exhibit #exhibition-info span p {
-    font-size: 16px; }
-
-.exhibit #exhibition-info nav {
-  display: block;
-  width: 75%;
-  text-align: center;
-  margin: auto; }
-  .exhibit #exhibition-info nav a {
-    display: inline-block;
-    color: #ddd;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 14px 5px;
-    margin: 0 8px;
-    margin-top: -2px; }
-    .exhibit #exhibition-info nav a:hover {
-      color: #00cc99; }
-    .exhibit #exhibition-info nav a.highlighted:after {
-      color: red;
-      content: '*'; }
+.exhibit #exhibition-info #exhibition-description {
+  display: none;
+  height: 0%;
+  overflow: hidden;
+  opacity: 1;
+  border: 1px solid black;
+  background-color: #0e0e0e;
+  margin-top: -76px;
+  color: #bbb;
+  padding: 48px 15px 7px 15px;
+  text-align: center; }
+  .exhibit #exhibition-info #exhibition-description p {
+    font-family: 'Lora', serif;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    text-align: left;
+    text-indent: 25px;
+    font-size: 100%;
+    line-height: 1.2em; }
 
 .memories #memories-list {
   display: -webkit-flex;
@@ -984,7 +988,7 @@ footer .logo svg {
   margin-top: 0px; }
 
 .memories #memories-list span {
-  color: #ee3333;
+  color: red;
   font-family: 'Montserrat', sans-serif; }
 
 .memories #memories-form-wrap {
@@ -996,7 +1000,7 @@ footer .logo svg {
   width: 300px;
   padding: 15px;
   margin: auto;
-  background-color: #121212;
+  background-color: #0e0e0e;
   border: 2px solid #181818;
   margin-bottom: 0px; }
 
@@ -1008,7 +1012,7 @@ footer .logo svg {
   font-family: 'Montserrat', sans-serif;
   width: 295px;
   display: block;
-  color: #ee3333;
+  color: red;
   margin-top: 15px;
   margin-bottom: 5px; }
 
@@ -1048,7 +1052,7 @@ footer .logo svg {
 .memories button:active, .memories button:focus {
   outline: none;
   background-color: #333333;
-  color: #ee3333; }
+  color: red; }
 
 .memories #add-memory {
   width: 303px;
@@ -1071,5 +1075,107 @@ footer .logo svg {
   font-weight: 100;
   height: 200px; }
 
-.interview .interview-segment {
-  display: none; }
+.splash-footer {
+  background: #111111;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 0px; }
+
+.interview .hero-info h1, .interview .hero-info h3 {
+  display: block;
+  margin: 0px; }
+
+.interview .hero-info h3 {
+  margin-top: -15px;
+  margin-bottom: -15px;
+  color: grey; }
+
+.interview #interview-content {
+  display: block;
+  width: 80%;
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto; }
+  .interview #interview-content div {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    font-size: 13pt;
+    padding: 0px;
+    margin: 7px auto 8px auto; }
+    .interview #interview-content div .interview-image {
+      height: 200px;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
+      border: 2px solid #0e0e0e; }
+      .interview #interview-content div .interview-image a {
+        font-family: "Montserrat", sans-serif;
+        color: #ddd; }
+      .interview #interview-content div .interview-image figcaption {
+        width: 100%;
+        height: 100%;
+        display: block; }
+        .interview #interview-content div .interview-image figcaption div {
+          width: 100%;
+          height: 50px;
+          background-color: black;
+          position: relative;
+          bottom: -150px;
+          opacity: .8;
+          padding: 0px; }
+          .interview #interview-content div .interview-image figcaption div:hover {
+            opacity: .9; }
+          .interview #interview-content div .interview-image figcaption div span {
+            text-align: left;
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            font-size: 12pt;
+            margin-top: 2px; }
+            .interview #interview-content div .interview-image figcaption div span:hover {
+              color: #00cc99; }
+    .interview #interview-content div figure {
+      margin: auto; }
+      .interview #interview-content div figure figcaption {
+        opacity: 0; }
+      .interview #interview-content div figure:hover figcaption {
+        opacity: 1; }
+    .interview #interview-content div label {
+      display: inline-block;
+      margin-left: -55px;
+      text-align: right;
+      width: 50px;
+      position: relative;
+      margin-top: 0px;
+      top: 0px; }
+    .interview #interview-content div .question label {
+      color: red; }
+    .interview #interview-content div .question span {
+      color: #ccc; }
+    .interview #interview-content div .response label {
+      color: #00cc99; }
+    .interview #interview-content div .response span {
+      color: grey; }
+    .interview #interview-content div p {
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      text-indent: 15px;
+      margin-top: 0px;
+      margin-bottom: 7px;
+      line-height: 135%;
+      font-size: inherit; }
+    .interview #interview-content div p:first-of-type {
+      text-indent: 0px; }

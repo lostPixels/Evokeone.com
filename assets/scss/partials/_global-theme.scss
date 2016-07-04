@@ -204,3 +204,9 @@ footer .logo svg {
         color: #888;
     }
 }
+
+// override default lightbox scheme
+.featherlight-content, .featherlight-close-icon{
+  background-color: $global-dk-grey !important;
+  color: $global-lt-grey !important;
+}

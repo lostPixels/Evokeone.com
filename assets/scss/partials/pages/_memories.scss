@@ -18,15 +18,15 @@
     flex: auto;
     max-width: 800px;
     flex-basis: 300px;
-    background-color: rgba(18, 18, 18, 0.75);
+    background-color: $global-semi-grey;
     padding: 7.5px 15px 15px 15px;
-    border: 2px solid #181818;
-    border-left: 8px solid #222222;
+    border: 2px solid $global-med-grey;
+    border-left: 8px solid $global-med-grey-border;
     }
 
   #memories-list figcaption{
     font-size: 75%;
-    color: #cc8888;
+    color: $global-light-pink;
     margin-top: 3px;
     margin-bottom: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -43,7 +43,7 @@
   }
 
   #memories-list span{
-    color: #ee3333;
+    color: $global-pink;
     font-family: 'Montserrat', sans-serif;
   }
 
@@ -57,7 +57,7 @@
     width: 300px;
     padding: 15px;
     margin: auto;
-    background-color: #121212;
+    background-color: $global-dk-grey;
     border: 2px solid #181818;
     margin-bottom: 0px;
   }
@@ -71,7 +71,7 @@
     font-family: 'Montserrat', sans-serif;
     width: 295px;
     display: block;
-    color: #ee3333;
+    color: $global-pink;
     margin-top: 15px;
     margin-bottom: 5px;
   }
@@ -118,7 +118,7 @@
   button:active, button:focus{
     outline: none;
     background-color: #333333;
-    color: #ee3333;
+    color: $global-pink;
   }
 
   #add-memory{

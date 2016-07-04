@@ -1,0 +1,35 @@
+<script>
+  var showTracklist =
+  {{#if data.showTracklist}}
+    {{data.showTracklist}};
+  {{else}}
+    false;
+  {{/if}}
+
+  var autoPlay =
+  {{#if data.autoPlay}}
+    {{data.autoPlay}};
+  {{else}}
+    false;
+  {{/if}}
+</script>
+<script src="/public/audioplayer/init-audioplayer.js"></script>
+
+<!-- Insert to your webpage where you want to display the audio player -->
+  <div id="audioplayer" style="display:block;position:relative;width:420px;height:auto;margin:0px auto 0px;">
+      <ul class="amazingaudioplayer-audios" style="display:none;" id="tracklist">
+        <!-- going through loop twice -->
+        <!-- somewhat inefficient -->
+        {{#if data.art}}
+          {{#each data.art}}
+              {{#compare this.type "audio" operator="=="}}
+                {{> audio-track}}
+              {{/compare}}
+          {{/each}}
+        {{else}}
+          {{> audio-track data}}
+        {{/if}}
+      </ul>
+      <div class="amazingaudioplayer-engine"><a href="http://amazingaudioplayer.com" title="html5 audio player">html5 audio player</a></div>
+  </div>
+  <!-- End of body section HTML codes -->

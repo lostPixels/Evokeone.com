@@ -1,8 +1,22 @@
 .exhibit{
     .hero-info{
+        z-index: 10;
         line-height: 1em;
         .tertiary-info{
             font-size: 12px;
+            a {
+              color: inherit;
+              &:hover{
+                color: $global-green;
+              }
+              &:after{
+                content: " // ";
+                color: $global-green;
+              }
+              &:last-child:after{
+                content: "";
+              }
+            }
         }
         .date{
             &:after{
@@ -32,7 +46,8 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-between;
+                //justify-content: center;
                 text-transform: uppercase;
                 font-size: 11px;
                 text-decoration: none;
@@ -69,46 +84,27 @@
 
     #exhibition-info{
 
-
-      span{
-        display: block;
-        border: 2px solid #000000;
-        background-color: rgba(18,18,18, 0.75);
-        padding: 50px;
-        text-align: left;
-        p{
-            font-size: 16px;
-        }
+      #exhibition-description{
+        display: none;
+        height: 0%;
+        overflow: hidden;
+        opacity: 1;
+         border: 1px solid black;
+        background-color: $global-dk-grey;
+        margin-top: -76px;
+        color: #bbb;
+        padding: 48px 15px 7px 15px;
+        text-align: center;
+        p {
+          font-family: 'Lora', serif;
+          margin-bottom: 7px;
+          margin-top: 7px;
+          text-align: left;
+          text-indent: 25px;
+          font-size: 100%;
+          line-height: 1.2em;
       }
-      nav {
-    	    display: block;
-          width: 75%;
-          text-align: center;
-          margin: auto;
-    		a {
-    		    display: inline-block;
-    		    color: $global-lt-grey;
-    		    font-family: 'Montserrat', sans-serif;
-    		    text-transform: uppercase;
-    		    text-decoration: none;
-    		    font-size: 14px;
-    		    padding: 14px 5px;
-    		    margin: 0 8px;
-            // background: $global-dk-grey;
-            // border: 2px solid black;
-            margin-top: -2px;
-            // width: 100px;
-    			&:hover{
-    				color: $global-green;
-    			}
-    			&.highlighted{
-    				&:after{
-    					color: $global-pink;
-    					content: '*';
-    				}
-    		  }
     }
-  }
-}
 
+  }
 }

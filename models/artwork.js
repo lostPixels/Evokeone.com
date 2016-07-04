@@ -14,6 +14,9 @@ function get(exhibitID, submissionID) {
     if( i < exhibit.art.length -1) {
         submission.next = exhibit.art[i + 1];
     }
+
+    // for audio tracks
+    submission['autoPlay'] = true;
     return submission;
 }
 

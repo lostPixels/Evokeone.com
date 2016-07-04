@@ -1,1 +1,19 @@
-I'm a question.
+<div class="question">
+<label>
+{{#compare int-id 1 operator='=='}}
+  {{@../interviewer1-initials}}:
+{{else}}
+  {{@../interviewer2-initials}}:
+{{/compare}}
+</label>
+<span>
+  <p>{{{question}}}</p>
+</span>
+</div>
+
+<div class="response">
+<label>{{@../artist-initials}}:</label>
+<span>
+  {{{response}}}
+</span>
+</div>
