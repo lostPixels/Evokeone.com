@@ -119,6 +119,12 @@
     {
       "type" : "interview-question",
       "int-id": 1,
+      "question" : "",
+      "response" : "<p>Unfortunately, my parents never wanted to support my music or art ... By saying I had no support, I mean did not have help to get pencils or materials. I never received a guitar on any Christmas.</p><p>I never got their support when I wanted to study music or arts. I had to earn it all myself.</p><p> I would tell people who have the same problem, go ahead, make up the resources, because later they will change their minds.</p>"
+    },
+    {
+      "type" : "interview-question",
+      "int-id": 1,
       "question" : "Any last thoughts you want to tell us before we wrap this up?",
       "response" : "<p>I love you guys.</p><p>I thank you for giving me a place in this team, and for all you all have done for me. For the good friends I made, and giving people the opportunity to fulfill our goals, to do what we love.</p>"
     }
