@@ -12,6 +12,7 @@
         @for $i from 1 through 6 {
             &.background-#{$i} {
                 background: url("../../img/homepage-hero-bg-#{$i}.jpg") center;
+                background-size: cover;
             }
         }
 

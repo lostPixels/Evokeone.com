@@ -1,9 +1,16 @@
 .single-art {
 
     &.expanded{
+        display: block;
         max-width: inherit;
+        text-align: center;
+        
+        .artwork-view-wrap{
+            display: inline-block;
+            text-align: left;
+        }
         .art-wrapper{
-            display: block;
+            
         }
         .art-img{
             width: inherit;

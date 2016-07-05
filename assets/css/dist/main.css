@@ -447,7 +447,7 @@ footer .logo svg {
   fill: #ddd; }
 
 .section-wrap {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 50px 0 50px; }
 
@@ -633,17 +633,23 @@ footer .logo svg {
   padding: 0;
   width: 100%; }
   .home .introduction.background-1 {
-    background: url("../../img/homepage-hero-bg-1.jpg") center; }
+    background: url("../../img/homepage-hero-bg-1.jpg") center;
+    background-size: cover; }
   .home .introduction.background-2 {
-    background: url("../../img/homepage-hero-bg-2.jpg") center; }
+    background: url("../../img/homepage-hero-bg-2.jpg") center;
+    background-size: cover; }
   .home .introduction.background-3 {
-    background: url("../../img/homepage-hero-bg-3.jpg") center; }
+    background: url("../../img/homepage-hero-bg-3.jpg") center;
+    background-size: cover; }
   .home .introduction.background-4 {
-    background: url("../../img/homepage-hero-bg-4.jpg") center; }
+    background: url("../../img/homepage-hero-bg-4.jpg") center;
+    background-size: cover; }
   .home .introduction.background-5 {
-    background: url("../../img/homepage-hero-bg-5.jpg") center; }
+    background: url("../../img/homepage-hero-bg-5.jpg") center;
+    background-size: cover; }
   .home .introduction.background-6 {
-    background: url("../../img/homepage-hero-bg-6.jpg") center; }
+    background: url("../../img/homepage-hero-bg-6.jpg") center;
+    background-size: cover; }
 
 .home .introduction:after {
   content: '';
@@ -774,9 +780,12 @@ footer .logo svg {
   vertical-align: middle; }
 
 .single-art.expanded {
-  max-width: inherit; }
-  .single-art.expanded .art-wrapper {
-    display: block; }
+  display: block;
+  max-width: inherit;
+  text-align: center; }
+  .single-art.expanded .artwork-view-wrap {
+    display: inline-block;
+    text-align: left; }
   .single-art.expanded .art-img {
     width: inherit;
     max-width: inherit;

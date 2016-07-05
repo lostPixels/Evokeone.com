@@ -1,29 +1,31 @@
-<nav class="artwork-navigator">
-	{{#if data.prev}}
-		<a href="/submission/{{data.exhibit.id}}/{{data.prev.id}}" id="prevlink">Previous</a>
-	{{/if}}
-	{{#if data.next}}
-		<a href="/submission/{{data.exhibit.id}}/{{data.next.id}}" id="nextlink">Next</a>
-	{{/if}}
-</nav>
-<figure class="art-wrapper">
-	{{#compare data.type "audio" operator="=="}}
-		{{> audio-player}}
-	{{else}}
-		<img class="art-img" src="/public/art/full/{{data.id}}.jpg">
-	{{/compare}}
-	<figcaption>
-		<h1 class="piece">{{data.title}}</h1>
-		<div class="artist-wrap">
-			<span class="artist-name">
-				{{#each data.artist}}
-					<h2 class="artist-title">
-						{{this.alias}} {{#if this.website}} <a class="artist-portfolio" href="{{this.website}}" title="{{this.website}}">( WEBSITE )</a>{{/if}}
-					</h2>
-				{{/each}}
-			</span>
-		</div>
-		<a href="/exhibits/{{data.exhibit.id}}" class="exhibit">Exhibition {{data.exhibit.number}}:<span class="exhibition-name">{{data.exhibit.title}}</span></a>
-	</figcaption>
-</figure>
+<div class="artwork-view-wrap">
+    <nav class="artwork-navigator">
+        {{#if data.prev}}
+            <a href="/submission/{{data.exhibit.id}}/{{data.prev.id}}" id="prevlink">Previous</a>
+        {{/if}}
+        {{#if data.next}}
+            <a href="/submission/{{data.exhibit.id}}/{{data.next.id}}" id="nextlink">Next</a>
+        {{/if}}
+    </nav>
+    <figure class="art-wrapper">
+        {{#compare data.type "audio" operator="=="}}
+            {{> audio-player}}
+        {{else}}
+            <img class="art-img" src="/public/art/full/{{data.id}}.jpg">
+        {{/compare}}
+        <figcaption>
+            <h1 class="piece">{{data.title}}</h1>
+            <div class="artist-wrap">
+                <span class="artist-name">
+                    {{#each data.artist}}
+                        <h2 class="artist-title">
+                            {{this.alias}} {{#if this.website}} <a class="artist-portfolio" href="{{this.website}}" title="{{this.website}}">( WEBSITE )</a>{{/if}}
+                        </h2>
+                    {{/each}}
+                </span>
+            </div>
+            <a href="/exhibits/{{data.exhibit.id}}" class="exhibit">Exhibition {{data.exhibit.number}}:<span class="exhibition-name">{{data.exhibit.title}}</span></a>
+        </figcaption>
+    </figure>
+</div>
 <script src="/public/js/nav.js"></script>
