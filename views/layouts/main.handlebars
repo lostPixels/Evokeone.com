@@ -26,16 +26,16 @@
     <link rel="stylesheet" type="text/css" href="/public/audioplayer/audioplayer.css">
     <!-- End of head section HTML codes -->
     {{#if data.title}}
-        <meta property="og:title"  content="EvokeOne - {{data.title}} by {{#each data.artist}}{{this.alias}}{{/each}}" />
+        <meta property="og:title"  content="EvokeOne - {{data.title}} by {{#each data.artist}}{{this.alias}} {{/each}}" />
     {{else}}
         <meta property="og:title"  content="EvokeOne - Forever" />
     {{/if}}
-    
+
     <meta property="og:description" content="10 Years of Digital Art, Music, and Photography" />
     {{#if data.id}}
-        <meta property="og:image" content="/public/art/full/{{data.id}}.jpg" />
+        <meta property="og:image" content="http://www.evokeone.com/public/art/full/{{data.id}}.jpg" />
     {{else}}
-        <meta property="og:image" content="/public/img/og-banner.jpg" />
+        <meta property="og:image" content="http://www.evokeone.com/public/img/og-banner.jpg" />
     {{/if}}
 </head>
 <body>
