@@ -1,5 +1,5 @@
 $global-green: #00cc99;
-$global-pink: red;
+$global-pink: #ff3366;
 $global-dk-grey: #0e0e0e;
 $global-lt-grey: #ddd;
 $global-med-grey: #181818;
@@ -23,3 +23,4 @@ $global-semi-grey: rgba(18, 18, 18, 0.75);
 @import 'partials/pages/memories';
 @import 'partials/pages/splash';
 @import 'partials/pages/interview';
+@import 'partials/pages/contact';

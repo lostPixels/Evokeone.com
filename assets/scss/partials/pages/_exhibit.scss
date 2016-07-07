@@ -26,6 +26,27 @@
         }
     }
 
+    .info-alert{
+        text-align: center;
+        margin: 10px 0 20px;       
+        p{
+            @include headline-font;
+            display: inline-block;
+            text-align: center;
+            margin: 0;
+            border: 1px solid $global-green;
+            padding: 10px;
+            border-radius: 100px;
+            color: $global-green;
+            font-size: 14px;
+            strong, a{
+                font-weight: bold;
+                color: lighten($global-green, 10%);
+            }
+
+        }
+    }
+
     .artwork-list{
         display: flex;
         flex-wrap: wrap;
@@ -89,20 +110,16 @@
         height: 0%;
         overflow: hidden;
         opacity: 1;
-         border: 1px solid black;
+        border: 1px solid black;
         background-color: $global-dk-grey;
         margin-top: -76px;
         color: #bbb;
-        padding: 48px 15px 7px 15px;
+        padding: 50px;
         text-align: center;
         p {
           font-family: 'Lora', serif;
-          margin-bottom: 7px;
-          margin-top: 7px;
+          
           text-align: left;
-          text-indent: 25px;
-          font-size: 100%;
-          line-height: 1.2em;
       }
     }
 

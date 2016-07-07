@@ -35,9 +35,7 @@ router.get('/', renderHome);
 // could include a JSON file with this data if
 // we needed to...
 function renderHome(req, res){
-    var page = ((splash)?"splash":"home");
-    var params = ((splash)?{layout : "splash"}:{wrapperClass : "home"});
-    res.render(page, params);
+    res.render('home', {wrapperClass : "home"});
 }
 
 /** Removing until we add all the art packs.
@@ -83,6 +81,12 @@ router.get('/archive', function(req, res) {
     });
 });
 
+router.get('/contact', function(req, res) {
+    res.render('contact', {
+        wrapperClass: 'contact'
+    });
+});
+
 
 router.get('/submission/:exhibitID/:submissionID', function(req, res) {
     var artworkData = artworkModel.get(req.exhibit.id, req.submission.id);
@@ -118,24 +122,11 @@ router.get('/db/init', function(req, res) {
     })
 });
 
-router.get('/artistcenter', function(req, res){
+router.get('/artistcenter*', function(req, res){
   res.writeHead(301,
     {Location: 'http://www.evokeone.net/artistcenter'}
   );
   res.end();
 });
-
-router.get('/splash',function(req, res) {
-      res.render('splash', {layout: 'splash'});
-});
-
-// toggles splash page on or off
-router.get('/splash/toggle', function(req, res){
-      splash = !(splash);
-      console.log("NOTE: SPLASH " + ((splash)?"ACTIVATED":"DEACTIVATED"));
-      renderHome(req, res);
-});
-
-
 
 module.exports = router;

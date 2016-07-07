@@ -426,7 +426,7 @@ header {
       header nav a:hover {
         color: #00cc99; }
       header nav a.highlighted:after {
-        color: red;
+        color: #ff3366;
         content: '*'; }
 
 footer {
@@ -447,7 +447,7 @@ footer .logo svg {
   fill: #ddd; }
 
 .section-wrap {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 50px 0 50px; }
 
@@ -873,6 +873,23 @@ footer .logo svg {
     content: ' // ';
     color: #00cc99; }
 
+.exhibit .info-alert {
+  text-align: center;
+  margin: 10px 0 20px; }
+  .exhibit .info-alert p {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    border: 1px solid #00cc99;
+    padding: 10px;
+    border-radius: 100px;
+    color: #00cc99;
+    font-size: 14px; }
+    .exhibit .info-alert p strong, .exhibit .info-alert p a {
+      font-weight: bold;
+      color: #00ffbf; }
+
 .exhibit .artwork-list {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -937,16 +954,11 @@ footer .logo svg {
   background-color: #0e0e0e;
   margin-top: -76px;
   color: #bbb;
-  padding: 48px 15px 7px 15px;
+  padding: 50px;
   text-align: center; }
   .exhibit #exhibition-info #exhibition-description p {
     font-family: 'Lora', serif;
-    margin-bottom: 7px;
-    margin-top: 7px;
-    text-align: left;
-    text-indent: 25px;
-    font-size: 100%;
-    line-height: 1.2em; }
+    text-align: left; }
 
 .memories #memories-list {
   display: -webkit-flex;
@@ -997,7 +1009,7 @@ footer .logo svg {
   margin-top: 0px; }
 
 .memories #memories-list span {
-  color: red;
+  color: #ff3366;
   font-family: 'Montserrat', sans-serif; }
 
 .memories #memories-form-wrap {
@@ -1021,7 +1033,7 @@ footer .logo svg {
   font-family: 'Montserrat', sans-serif;
   width: 295px;
   display: block;
-  color: red;
+  color: #ff3366;
   margin-top: 15px;
   margin-bottom: 5px; }
 
@@ -1061,7 +1073,7 @@ footer .logo svg {
 .memories button:active, .memories button:focus {
   outline: none;
   background-color: #333333;
-  color: red; }
+  color: #ff3366; }
 
 .memories #add-memory {
   width: 303px;
@@ -1170,7 +1182,7 @@ footer .logo svg {
       margin-top: 0px;
       top: 0px; }
     .interview #interview-content div .question label {
-      color: red; }
+      color: #ff3366; }
     .interview #interview-content div .question span {
       color: #ccc; }
     .interview #interview-content div .response label {
@@ -1188,3 +1200,6 @@ footer .logo svg {
       font-size: inherit; }
     .interview #interview-content div p:first-of-type {
       text-indent: 0px; }
+
+.section-wrap.contact {
+  text-align: center; }

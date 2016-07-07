@@ -18,7 +18,10 @@ gulp.task('serve', ['sass'], function() {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("assets/scss/*.scss")
-        .pipe(sass().on('error', sass.logError))
+        .pipe(plumber())
+        .pipe(sass({
+            errLogToConsole: true
+        }).on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 3 versions'],
             cascade: false
