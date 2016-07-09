@@ -11,6 +11,8 @@ function captchaReady(){
 
 $(document).ready(function(){
 
+    captchaReady();
+
   $('#show-add-memory').on('click', function(event){
     event.preventDefault();
     $('#memories-form-wrap').show();
