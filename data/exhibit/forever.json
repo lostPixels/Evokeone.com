@@ -2,16 +2,28 @@
     "id": "forever",
     "title": "FOREVER",
     "number": "XXXII",
-    "releaseDate": "2016-07-01",
-    "description": "<p>A year in the making, Forever is the final chapter in the Evoke saga. Evoke artists, photographers and musicians, new and old came together to produce this last exhibition.</p><p>Although Forever is smaller than most Evoke releases, its significance cannot be overstated. Since our founding 11 years ago, Evoke has left an indelible mark on hundreds of creatives from around the world. What this release lacks in size, it makes up for in meaning.</p><p>Alejandro Soto Martinessi (Jin) absolutely killed it this exhibition, taking us all on a fantastic psychedelic voyage through the inner workings of his mind. It is an honor for us to feature him in Forever.</p><p>If you are an Evoke artist and missed the deadline to submit, we can include pieces after the fact. After all, we are not producing any more packs. Zip us an email!</p><p>Thanks again for your support over the years.</p>",
+    "releaseDate": "2016-06-01",
+    "description": "<p>A long time in the making, Forever represents the final chapter in the Evoke story. Evoke artists, photographers and musicians, new and old came together to produce this last exhibition. <\/p><p>We felt it would be only fitting to send the group off with a bang, and so we set out to craft one final exhibition and a commemorative site to house it.<\/p> Alejandro Soto Martinessi (Jin) absolutely killed it for this final pack, taking us all on a fantastic psychedelic voyage through the inner workings of his mind. It is an honor for us to feature him in Forever.<\/p> <p>If you are an Evoke artist and missed the deadline to submit, we can include pieces in this exhibition after the fact. Zip us an email. Thanks again for your support over the years. Enjoy!<\/p><p>Evoke Forever!<\/p>",
     "image": "",
-    "interviewArtist" : "Jin",
     "og": {
         "title": "",
         "image": "",
         "description": ""
     },
     "art": [
+        {
+            "id": "adventure_is_out_there_by_daniel_tatarinow",
+            "title": "Adventure Is Out There",
+            "artist": [
+                {
+                    "alias": "Vexatious",
+                    "realname": "Daniel Tatarinow"
+                }
+            ],
+            "fileID": "adventure_is_out_there_by_daniel_tatarinow",
+            "featured": false,
+            "type": "art"
+        },
         {
             "id": "always_by_ben_white",
             "title": "ALWAYS",
@@ -53,21 +65,21 @@
             "type": "art"
         },
         {
-            "id": "bad_trip_by_jaime_yusingboand_alejandro_soto_martinessi",
+            "id": "bad_trip_by_alejandro_soto_martinessiand_jaime_yusingbo",
             "title": "Bad Trip",
             "artist": [
-                {
-                    "alias": "Jaime",
-                    "website": "https:\/\/www.behance.net\/jaimeyusingbo",
-                    "realname": "Jaime Yusingbo"
-                },
                 {
                     "alias": "Jin",
                     "website": "http:\/\/kaowsmk.wix.com\/alejandro",
                     "realname": "Alejandro soto martinessi"
+                },
+                {
+                    "alias": "Jaime",
+                    "website": "https:\/\/www.behance.net\/jaimeyusingbo",
+                    "realname": "Jaime Yusingbo"
                 }
             ],
-            "fileID": "bad_trip_by_jaime_yusingboand_alejandro_soto_martinessi",
+            "fileID": "bad_trip_by_alejandro_soto_martinessiand_jaime_yusingbo",
             "featured": false,
             "type": "art"
         },
@@ -113,6 +125,20 @@
             "type": "art"
         },
         {
+            "id": "eternal_by_ben_white",
+            "title": "ETERNAL",
+            "artist": [
+                {
+                    "alias": "arklo",
+                    "website": "http:\/\/nvlnvl.co",
+                    "realname": "Ben White"
+                }
+            ],
+            "fileID": "eternal_by_ben_white",
+            "featured": false,
+            "type": "art"
+        },
+        {
             "id": "everlast_by_the_fleeting_by_hiroshi",
             "title": "Everlast by the Fleeting",
             "artist": [
@@ -136,6 +162,20 @@
                 }
             ],
             "fileID": "evk_by_alejandro_soto_martinessi",
+            "featured": false,
+            "type": "art"
+        },
+        {
+            "id": "evol_by_alejandro_soto_martinessi",
+            "title": "Evol",
+            "artist": [
+                {
+                    "alias": "Jin",
+                    "website": "http:\/\/kaowsmk.wix.com\/alejandro",
+                    "realname": "Alejandro soto martinessi"
+                }
+            ],
+            "fileID": "evol_by_alejandro_soto_martinessi",
             "featured": false,
             "type": "art"
         },
@@ -164,6 +204,20 @@
             "fileID": "float_by_parker_gibson",
             "featured": false,
             "type": "art"
+        },
+        {
+            "id": "forever_final_by_cp-r",
+            "title": "Forever Final",
+            "artist": [
+                {
+                    "alias": "Eric Singleton",
+                    "website": "www.soundcloud.com\/cp_r",
+                    "realname": "CP-r"
+                }
+            ],
+            "fileID": "forever_final_by_cp-r",
+            "featured": false,
+            "type": "audio"
         },
         {
             "id": "fukurou_by_mark_paje",
@@ -220,6 +274,20 @@
             "type": "art"
         },
         {
+            "id": "la_mort_by_alejandro_soto_martinessi",
+            "title": "La Mort",
+            "artist": [
+                {
+                    "alias": "Jin",
+                    "website": "http:\/\/kaowsmk.wix.com\/alejandro",
+                    "realname": "Alejandro soto martinessi"
+                }
+            ],
+            "fileID": "la_mort_by_alejandro_soto_martinessi",
+            "featured": false,
+            "type": "art"
+        },
+        {
             "id": "music_that_evoked_one_smile_forever_by_adrian_piciorea",
             "title": "Music that EVOKEd ONE smile FOREVER",
             "artist": [
@@ -231,6 +299,20 @@
             "fileID": "music_that_evoked_one_smile_forever_by_adrian_piciorea",
             "featured": false,
             "type": "audio"
+        },
+        {
+            "id": "mystic_coeurl_by_jaime_yusingbo",
+            "title": "Mystic Coeurl",
+            "artist": [
+                {
+                    "alias": "Jaime",
+                    "website": "https:\/\/www.behance.net\/jaimeyusingbo",
+                    "realname": "Jaime Yusingbo"
+                }
+            ],
+            "fileID": "mystic_coeurl_by_jaime_yusingbo",
+            "featured": false,
+            "type": "art"
         },
         {
             "id": "nissim_by_parker_gibson",
@@ -464,20 +546,6 @@
             "fileID": "untitled_by_frieder_jan_moerman",
             "featured": false,
             "type": "photo"
-        },
-        {
-            "id": "version_2_by_cp-r",
-            "title": "Version 2",
-            "artist": [
-                {
-                    "alias": "Eric Singleton",
-                    "website": "www.soundcloud.com\/cp_r",
-                    "realname": "CP-r"
-                }
-            ],
-            "fileID": "version_2_by_cp-r",
-            "featured": false,
-            "type": "audio"
         },
         {
             "id": "waiting_of_the_afterglow_by_alejandro_soto_martinessi",
