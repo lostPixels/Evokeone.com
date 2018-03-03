@@ -12,11 +12,16 @@ var hbs = exphbs.create({
     helpers: extraHelpers.helpers()
 });
 
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
+app.engine('.hbs', exphbs({
+         defaultLayout: 'main',
+         extname: '.handlebars',
+         partialsDir: path.join(__dirname, 'views/partials'),
+         layoutsDir: path.join(__dirname, 'views/layouts')
+
+ }));
 
 app.use(routes);
-app.use('/public', express.static('assets'));
+app.use('/public', express.static(path.join(__dirname,'assets')));
 
 app.listen(3000, '127.0.0.1');
 
